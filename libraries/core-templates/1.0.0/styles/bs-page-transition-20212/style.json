@@ -1,0 +1,8 @@
+{
+  "label": "BS Page Transition",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "section"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "label": "BS Background",
+  "block": {
+    "decs": {
+      "@fileName": "BS_mini.jpg",
+      "@position": "percent",
+      "background-position": "50% 50%",
+      "background-repeat": "no-repeat",
+      "background-size": "cover"
+    },
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+	"span": {
+		"xs": 0,
+		"sm": 0,
+		"md": 0,
+		"lg": 0
+	},
+	"category": "Custom Components",
+	"label": "BS Web Fonts - temp",
+	"rows": [
+		[
+			{
+				"label": "Quicksand Regular",
+				"properties": {
+					"font": {
+						"fontFamily": "QuicksandRegular",
+						"eotFileName": "Quicksand-Regular.eot",
+						"woffFileName": "Quicksand-Regular.woff",
+						"svgFileName": "Quicksand-Regular.svg",
+						"ttfFileName": "Quicksand-Regular.ttf"
+					}
+				},
+				"type": "resource-font",
+				"path": "",
+				"htmlLabel": "Quicksand Regular",
+				"pubId": "9506cd15cc3443169c8e3c631252cc2c",
+				"id": "quicksandRegular"
+			}
+		],
+		[
+			{
+				"label": "Quicksand Medium",
+				"properties": {
+					"font": {
+						"fontFamily": "QuicksandMedium",
+						"eotFileName": "Gotham-Medium.eot",
+						"woffFileName": "Gotham-Medium.woff",
+						"svgFileName": "Gotham-Medium.svg",
+						"ttfFileName": "Gotham-Medium.ttf",
+						"undefined": "Quicksand-Medium.otf"
+					}
+				},
+				"type": "resource-font",
+				"path": "",
+				"htmlLabel": "Quicksand Medium",
+				"pubId": "bc3368bf980f4e08ac8071a184b5ce88",
+				"id": "quicksandMedium"
+			}
+		],
+		[
+			{
+				"label": "Quicksand Bold",
+				"properties": {
+					"font": {
+						"fontFamily": "QuicksandBold",
+						"eotFileName": "Quicksand-Bold.eot",
+						"woffFileName": "Quicksand-Bold.woff",
+						"svgFileName": "Quicksand-Bold.svg",
+						"ttfFileName": "Quicksand-Bold.ttf"
+					}
+				},
+				"type": "resource-font",
+				"path": "",
+				"htmlLabel": "Quicksand Bold",
+				"pubId": "3d8bf99e9ce34bb29b1f1aa631fd8560",
+				"id": "quicksandBold"
+			}
+		],
+		[
+			{
+				"label": "Quicksand Light",
+				"properties": {
+					"font": {
+						"fontFamily": "QuicksandLight",
+						"eotFileName": "Quicksand-Light.eot",
+						"woffFileName": "Quicksand-Light.woff",
+						"svgFileName": "Quicksand-Light.svg",
+						"ttfFileName": "Quicksand-Light.ttf"
+					}
+				},
+				"type": "resource-font",
+				"path": "",
+				"htmlLabel": "Quicksand Light",
+				"pubId": "6bffc9d557414b889044c105cffb6135",
+				"id": "quicksandLight"
+			}
+		],
+		[
+			{
+				"label": "Lato-Regular",
+				"properties": {
+					"font": {
+						"fontFamily": "Lato-Regular",
+						"eotFileName": "Lato-Regular.eot",
+						"woffFileName": "Lato-Regular.woff",
+						"svgFileName": "Lato-Regular.svg",
+						"ttfFileName": "Lato-Regular.ttf"
+					}
+				},
+				"type": "resource-font",
+				"path": "",
+				"htmlLabel": "Lato-Regular",
+				"pubId": "997672459ef4436695be5ede1d148889",
+				"id": "latoregular"
+			}
+		]
+	],
+	"type": "block",
+	"path": "",
+	"htmlLabel": "Web Fonts",
+	"id": "webFonts",
+	"blockInfo": {
+		"editLink": "https://tm.maestro.avoka.com/maestro-50/secure/design/6646",
+		"publishLibraryId": 5704,
+		"blockCode": "bs-web-fonts---temp"
+	},
+	"description": ""
+}

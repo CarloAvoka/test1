@@ -1,0 +1,8 @@
+{
+  "label": "BS Fixed Bottom Right",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

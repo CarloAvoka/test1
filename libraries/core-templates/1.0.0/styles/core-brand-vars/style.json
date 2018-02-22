@@ -1,0 +1,205 @@
+{
+	"label": "Core Brand Vars",
+	"file": "core-brand-vars.less",
+	"receiptFile": "core-receipt.less",
+	"styleVars": [
+		{
+			"name": "av-primary-color",
+			"type": "color",
+			"label": "Primary Color",
+			"description": "<ul><li>Header Container Border</li><li>Header Tracking Code Background</li><li>Menu Active Background</li><li>Page Form Name Text</li><li>Submit Button Background</li></ul>",
+			"category": "Color palette",
+			"defaultValue": "#FF6405",
+			"order": 1
+		},
+		{
+			"name": "av-primary-contrast",
+			"type": "color",
+			"label": "Primary Contrast",
+			"description": "<ul><li>Header Tracking Code Text</li><li>Menu Active Text</li><li>Submit Button Text</li></ul>",
+			"category": "Color palette",
+			"defaultValue": "#FFFFFF",
+			"order": 2
+		},
+		{
+			"name": "av-secondary-color",
+			"type": "color",
+			"label": "Secondary Color",
+			"description": "<ul><li>Mobile Menu Item Background</li><li>Popover Help Button Icon</li><li>Touch Button Icon</li></ul>",
+			"category": "Color palette",
+			"defaultValue": "#FFFFFF",
+			"order": 3
+		},
+		{
+			"name": "av-secondary-contrast",
+			"type": "color",
+			"label": "Secondary Contrast",
+			"description": "<ul><li>Advice Block Info Header Text</li><li>Button Background</li><li>Header Help Button Background</li><li>Menu Continue Navigation Button Background</li><li>Menu Text</li><li>Popover Help Button Background</li><li>Touch Button Icons</li></ul>",
+			"category": "Color palette",
+			"defaultValue": "#0C384B",
+			"order": 4
+		},
+		{
+			"name": "av-neutral-color",
+			"type": "color",
+			"label": "Neutral Color",
+			"description": "<ul><li>Advice Block Background</li><li>Menu Background</li></ul>",
+			"category": "Color palette",
+			"defaultValue": "#F2F2F2",
+			"order": 5
+		},
+		{
+			"name": "av-neutral-contrast",
+			"type": "color",
+			"label": "Neutral Contrast",
+			"category": "Color palette",
+			"defaultValue": "#8C8C8C",
+			"order": 6
+		},
+		{
+			"name": "av-font-color",
+			"type": "color",
+			"label": "Font Color",
+			"category": "Font",
+			"defaultValue": "#333333",
+			"order": 7
+		},
+		{
+			"name": "av-font-family",
+			"type": "text",
+			"label": "Font Family",
+			"category": "Font",
+			"defaultValue": "Arial, Helvetica, sans-serif",
+			"order": 8
+		},
+		{
+			"name": "av-popover-help",
+			"type": "color",
+			"label": "Popover Help Button Icon Color",
+			"category": "Other",
+			"defaultValue": "#0C384B",
+			"order": 9
+		},
+		{
+			"name": "av-popover-help-btn-focus",
+			"type": "color",
+			"label": "Popover Help Button Icon Focus Color",
+			"category": "Other",
+			"defaultValue": "#2a7ab0",
+			"order": 10
+		},
+        {
+            "name": "av-form-background-color",
+            "type": "color",
+            "label": "Form Background Color",
+			"description": "<ul><li>Form element background</li></ul>",
+            "category": "Other",
+            "defaultValue": "#FFFFFF",
+            "order": 11
+        },
+        {
+            "name": "av-form-inner-background-color",
+            "type": "color",
+            "label": "Form Inner Background Color",
+			"description": "<ul><li>The direct child of the form element</li></ul>",
+            "category": "Other",
+            "defaultValue": "#FFFFFF",
+            "order": 12
+        },
+        {
+            "name": "av-body-background-color",
+            "type": "color",
+            "label": "Body Background Color",
+			"description": "<ul><li>The body element, will show on the left and right of the form</li></ul>",
+            "category": "Other",
+            "defaultValue": "#FFFFFF",
+            "order": 13
+        },
+		{
+			"name": "av-touch-button-color",
+			"type": "color",
+			"label": "Touch Button Color",
+			"category": "Buttons",
+			"defaultValue": ""
+		},
+		
+		{
+			"name": "av-button-primary-color",
+			"type": "color",
+			"label": "Primary Button Color",
+			"category": "Buttons",
+			"defaultValue": ""
+		},
+		{
+			"name": "av-button-secondary-color",
+			"type": "color",
+			"label": "Secondary Button Color",
+			"category": "Buttons",
+			"defaultValue": ""
+		},
+		{
+			"name": "av-button-contrast",
+			"type": "color",
+			"label": "Button Contrast Color",
+			"category": "Buttons",
+			"defaultValue": ""
+		},
+		{
+			"name": "av-focus-color",
+			"type": "color",
+			"label": "Focus color",
+			"category": "Action colors",
+			"defaultValue": ""
+		},
+		{
+			"name": "av-hover-color",
+			"type": "color",
+			"label": "Hover Color",
+			"category": "Action colors",
+			"defaultValue": ""
+		},
+		{
+			"name": "av-button-docking-color",
+			"type": "color",
+			"label": "Navigation Button Color",
+			"category": "Buttons",
+			"defaultValue": ""
+		},
+		{
+			"name": "av-button-docking-contrast",
+			"type": "color",
+			"label": "Navigation Button Contrast Color",
+			"category": "Buttons",
+			"defaultValue": ""
+		},
+		{
+			"name": "av-button-docking-font-color",
+			"type": "color",
+			"label": "Navigation Button Font Color",
+			"category": "Buttons",
+			"defaultValue": ""
+		},
+
+		{
+			"name": "av-dialog-background",
+			"type": "color",
+			"label": "Dialog Background Color",
+			"category": "Dialogs",
+			"defaultValue": "#000"
+		},
+		{
+			"name": "av-button-font-size",
+			"type": "px",
+			"label": "Button Font Size",
+			"category": "Buttons",
+			"defaultValue": "16px"
+		},
+		{
+			"name": "av-header-height",
+			"type": "px",
+			"label": "Header Height",
+			"category": "Form Header",
+			"defaultValue": "75px"
+		}
+	]
+}

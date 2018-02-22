@@ -1,0 +1,141 @@
+{
+	"label": "Modal Page Core",
+	"rows": [
+		[
+			{
+				"rows": [
+					[]
+				],
+				"pubId": "fb2710bf445348a0b3348c277ae25d53",
+				"subId": "2f5c018e42eb4132b71ba6445983da7a",
+				"id": "modalBackground_1",
+				"type": "modal-background"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												{
+													"rows": [
+														[
+															{
+																"properties": {},
+																"pubId": "e16044b6f54649b29f8fc0217e584b77",
+																"subId": "759cc4ed2a9240aca14456c79f50aa2c",
+																"id": "modalLogoImage_1",
+																"type": "image"
+															}
+														]
+													],
+													"pubId": "6fc01299872445448b85622c2188b494",
+													"subId": "81604a78df3b4507ba1efa2e349ef3f6",
+													"id": "modalLogo_1",
+													"type": "block"
+												}
+											]
+										],
+										"pubId": "89fb5406cfe4459b86fa72fcc4cf81fe",
+										"subId": "10cd185db8f44312a2d007cce8c61074",
+										"id": "modalHeader_3",
+										"type": "form-header"
+									}
+								]
+							],
+							"pubId": "0556f32929054ae994a65aebdedc76ac",
+							"subId": "f85f23c17b944a399f2368733020e9ad",
+							"id": "stickyPanelModal_1",
+							"type": "sticky-panel"
+						}
+					]
+				],
+				"pubId": "9dff6f6d9f3e40299733766ce093bda7",
+				"subId": "8f9a2f46878a40938967fa6fbdcea360",
+				"id": "modalHeader_2",
+				"type": "block"
+			}
+		],
+		[
+			{
+				"label": "Modal Content Title",
+				"rows": [
+					[
+						{
+							"label": "Action button",
+							"htmlLabel": "Action button",
+							"pubId": "664e44d55e00407d9d4d24d4e1426fae",
+							"rules": {},
+							"subId": "b9752e41b4f24a4a9e5059d0704210e7",
+							"id": "startANewForm_4",
+							"type": "button",
+							"exclude": true
+						}
+					]
+				],
+				"properties": {
+					"infoText": "Modal content goes here"
+				},
+				"htmlLabel": "<h1>Modal Content Title</h1>",
+				"pubId": "ea5b9f4077a24d2b93f412748bbf4bf9",
+				"subId": "d4a0cd71666b429898edfba3b748599d",
+				"id": "saveModalContent",
+				"type": "section-2"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"rows": [
+								[
+									{
+										"pubId": "46f9f22172c44180a9cc84ada4a4aead",
+										"subId": "8c9b02742d3841d8a9c30d826878b6af",
+										"id": "textDisplay_4",
+										"type": "text-display"
+									}
+								]
+							],
+							"pubId": "321156c132f54510ad5c0f0d9040cc05",
+							"subId": "082a0f34bab7496ab942025374652910",
+							"id": "formFooterText_4",
+							"type": "section-2"
+						}
+					]
+				],
+				"pubId": "105c8613ddd44fd580970e2f3d22ba7f",
+				"subId": "b4eb8296a924482c880d6c3abca4bb61",
+				"id": "modalFooter_1",
+				"type": "form-footer"
+			}
+		]
+	],
+	"properties": {},
+	"type": "bs-modal-page",
+	"blockInfo": {
+		"editLink": "https://maestro.avoka.com.au/maestro/secure/design/15542",
+		"publishLibraryId": 16680,
+		"blockCode": "modal-page-core",
+		"designVersion": "0.1.0"
+	},
+	"description": "",
+	"htmlLabel": "Save Success",
+	"id": "savesuccess",
+	"category": "Custom Components",
+	"ruleTemplates": [
+		{
+			"type": "load",
+			"name": "Load",
+			"editor": "script",
+			"isAction": true,
+			"msg": "a script to run when the modal page loads"
+		}
+	]
+}

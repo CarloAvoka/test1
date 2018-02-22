@@ -1,0 +1,189 @@
+{
+	"rows": [
+		[
+			{
+				"rows": [
+					[]
+				],
+				"type": "modal-background",
+				"id": "modalBackground",
+				"path": "",
+				"exclude": false
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												{
+													"rows": [
+														[
+															{
+																"span": {
+																	"md": 12,
+																	"lg": 12
+																},
+																"properties": {
+																	"src": {
+																		"fileName": "avoka-logo.png",
+																		"width": "50",
+																		"height": "42"
+																	}
+																},
+																"type": "image",
+																"id": "modalLogoImage",
+																"path": "",
+																"exclude": false,
+																"label": "Modal logo image",
+																"htmlLabel": "Modal logo image"
+															}
+														]
+													],
+													"type": "block",
+													"id": "modalLogo",
+													"path": "",
+													"exclude": false,
+													"label": "Modal logo",
+													"htmlLabel": "Modal logo",
+													"styles": [
+														"bs-logo-container-86033"
+													]
+												}
+											]
+										],
+										"type": "form-header",
+										"id": "modalHeader",
+										"path": "",
+										"exclude": false,
+										"label": "Modal Header",
+										"htmlLabel": "Modal Header",
+										"styles": [
+											"mg-header",
+											"bs-max-width-73189"
+										]
+									}
+								]
+							],
+							"type": "sticky-panel",
+							"id": "stickyPanelModal",
+							"path": "StickyPanelmodal",
+							"exclude": false,
+							"label": "Sticky Panel-modal",
+							"htmlLabel": "Sticky Panel-modal",
+							"styles": [
+								"bs-fixed-header-40325"
+							]
+						}
+					]
+				],
+				"type": "block",
+				"id": "modalHeader",
+				"path": "",
+				"exclude": false,
+				"label": "Modal header",
+				"htmlLabel": "Modal header"
+			}
+		],
+		[
+			{
+				"label": "Modal Content",
+				"rows": [[
+					{
+						"label": "Extra Information",
+						"span": {},
+						"path": "",
+						"hasCustomPath": true,
+						"pathContext": "not",
+						"rows": [
+							[
+
+							]
+						],
+						"type": "block",
+						"styles": [
+
+						],
+						"hideOnReceipt": true,
+						"hideOnSummary": true,
+						"category": "Post Submission"
+					}
+				],[
+					{
+						"label": "Follow on options",
+						"styles": [
+							"follow-on-options-block"
+
+						],
+						"animateVisibility": true,
+						"rules": {
+
+						},
+						"span": {"xs": 12, "sm": 12, "md": 4, "lg": 4},
+						"id": "followOnOptions",
+						"htmlLabel": "Follow on options",
+						"type": "follow-on-options",
+						"exclude": false
+					}
+				]
+				],
+				"styles": [
+					"mg-section-2",
+					"bc-white-background-20804",
+					"bs-center-align-19822",
+					"bs-max-width-73189",
+					"bs-modal-content-96022"
+				],
+				"properties": {
+					"infoText": "Thanks for your visit."
+				},
+
+				"type": "section-2",
+				"path": "",
+				"htmlLabel": "<h1>Modal Content</h1>",
+				"exclude": false,
+				"id": "modalContent"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"type": "text-display",
+							"id": "formFooterText",
+							"path": "",
+							"exclude": false
+						}
+					]
+				],
+				"type": "form-footer",
+				"rules": {
+					"sh": "!Util.isReceipt"
+				},
+				"id": "modalFooter",
+				"path": "",
+				"exclude": false,
+				"label": "Modal Footer",
+				"htmlLabel": "Modal Footer",
+				"styles": [
+					"bc-white-background-20804",
+					"bs-modal-footer-03990"
+				]
+			}
+		]
+	],
+	"properties": {},
+	"type": "modal",
+	"path": "",
+	"hasCustomId": true,
+	"exclude": false,
+	"id": "bsModalPage",
+	"label": "BS Modal Page",
+	"category": "Custom Components"
+}

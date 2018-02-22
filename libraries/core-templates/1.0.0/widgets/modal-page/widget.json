@@ -1,0 +1,178 @@
+{
+	"rows": [
+		[
+			{
+				"rows": [
+					[]
+				],
+				"type": "modal-background",
+				"id": "modalBackground",
+				"pubId": "757fcdfd6278425e900629370c31ac19"
+			}
+		],
+		[
+			{
+				"label": "Modal header",
+				"rows": [
+					[
+						{
+							"label": "Sticky Panel-modal",
+							"rows": [
+								[
+									{
+										"label": "Modal Header",
+										"rows": [
+											[
+												{
+													"label": "Modal logo",
+													"rows": [
+														[
+															{
+																"span": {
+																	"md": 12,
+																	"lg": 12
+																},
+																"label": "Modal logo image",
+																"properties": {
+																	"src": {
+																		"fileName": "bs-logo.png"
+																	}
+																},
+																"type": "image",
+																"path": "",
+																"exclude": false,
+																"htmlLabel": "Modal logo image",
+																"id": "modalLogoImage",
+																"pubId": "c755d49c567a45a991bc305126f4b389"
+															}
+														]
+													],
+													"type": "block",
+													"path": "",
+													"exclude": false,
+													"htmlLabel": "Modal logo",
+													"styles": [
+														"bs-logo-container-86033"
+													],
+													"id": "modalLogo",
+													"pubId": "c5c6c2fa039049e682ee82f67612c547"
+												}
+											]
+										],
+										"type": "form-header",
+										"path": "",
+										"exclude": false,
+										"htmlLabel": "Modal Header",
+										"styles": [
+											"mg-header",
+											"bs-max-width-73189"
+										],
+										"id": "modalHeader_1",
+										"pubId": "a10f1aa994044906b0ed82b5ddef53e5"
+									}
+								]
+							],
+							"type": "sticky-panel",
+							"path": "StickyPanelmodal",
+							"exclude": false,
+							"htmlLabel": "Sticky Panel-modal",
+							"styles": [
+								"bs-fixed-header-40325"
+							],
+							"id": "stickyPanelModal",
+							"pubId": "9629a99281c94643905c26fbaa45a28d"
+						}
+					]
+				],
+				"type": "block",
+				"path": "",
+				"exclude": false,
+				"htmlLabel": "Modal header",
+				"id": "modalHeader",
+				"pubId": "af9fb25d06394df9ae9bcba35dec9d8c"
+			}
+		],
+		[
+			{
+				"label": "Modal Content",
+				"rows": [
+					[
+						{
+							"label": "Start a new form",
+							"styles": [
+								"av-global-layout",
+								"av-button",
+								"av-button-primary"
+							],
+							"type": "button",
+							"path": "",
+							"htmlLabel": "Start a new form",
+							"exclude": false,
+							"id": "startANewForm",
+							"pubId": "5802b377593d4d2d992697d9c4b7ef22"
+						}
+					]
+				],
+				"styles": [
+					"mg-section-2",
+					"bc-white-background-20804",
+					"bs-center-align-19822",
+					"bs-max-width-73189",
+					"bs-modal-content-96022"
+				],
+				"properties": {
+					"infoText": "Your Application has been received"
+				},
+				"type": "section-2",
+				"path": "",
+				"htmlLabel": "<h1>Modal Content</h1>",
+				"exclude": false,
+				"id": "modalContent",
+				"pubId": "b01e6eda1cb34be7be0a1adc944b22d1"
+			}
+		],
+		[
+			{
+				"label": "Modal Footer",
+				"rows": [
+					[
+						{
+							"path": "",
+							"exclude": false,
+							"subId": "8c9b02742d3841d8a9c30d826878b6af",
+							"id": "formFooterText_3",
+							"type": "text-display",
+							"pubId": "67b2dd4a2c1a48b0b154771b7468e1bf"
+						}
+					]
+				],
+				"type": "form-footer",
+				"rules": {
+					"sh": "!Util.isReceipt"
+				},
+				"path": "",
+				"exclude": false,
+				"htmlLabel": "Modal Footer",
+				"styles": [
+					"bc-white-background-20804",
+					"bs-modal-footer-03990"
+				],
+				"id": "modalFooter",
+				"pubId": "0866d8edd173475ca89be9e6c77641b4"
+			}
+		]
+	],
+	"properties": {},
+	"type": "modal",
+	"path": "",
+	"hasCustomId": true,
+	"exclude": false,
+	"id": "submitsuccess",
+	"label": "Modal Page",
+	"category": "Custom Components",
+	"blockInfo": {
+		"editLink": "https://maestro.avoka.com.au/maestro/secure/design/14257",
+		"publishLibraryId": 10988,
+		"blockCode": "modal-page"
+	}
+}

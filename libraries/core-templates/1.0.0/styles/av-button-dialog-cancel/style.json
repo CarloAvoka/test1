@@ -1,0 +1,7 @@
+{
+  "label": "AV dialog cancel",
+  "file": "style.less",
+  "widgets": [
+    "button"
+  ]
+}

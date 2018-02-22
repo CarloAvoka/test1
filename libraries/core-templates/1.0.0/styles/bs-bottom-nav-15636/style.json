@@ -1,0 +1,11 @@
+{
+  "label": "BS Bottom Nav",
+  "block": {
+    "decs": {},
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

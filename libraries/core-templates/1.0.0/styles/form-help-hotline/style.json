@@ -1,0 +1,20 @@
+{
+  "label": "Form Help Hotline",
+  "block": {
+    "decs": {
+      "padding-bottom": "18px",
+      "padding-top": "20px",
+      "font-size": "22px",
+      "text-decoration": "underline"
+    },
+    "blocks": {
+      "undefined": {
+        "decs": {
+          "padding-bottom": "50px"
+        },
+        "blocks": {}
+      }
+    }
+  },
+  "file": "style.less"
+}

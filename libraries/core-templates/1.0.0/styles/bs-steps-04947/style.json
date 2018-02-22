@@ -1,0 +1,8 @@
+{
+  "label": "BS Steps",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "text-display"
+  ]
+}

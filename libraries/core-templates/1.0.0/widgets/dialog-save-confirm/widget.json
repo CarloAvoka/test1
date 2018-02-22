@@ -1,0 +1,144 @@
+{
+	"label": "BS Save Confirm",
+	"rows": [
+		[
+			{
+				"rows": [
+					[
+						{
+							"styles": [
+								"av-global-layout",
+								"bs-close-dialog-77958"
+							],
+							"hideLabel": false,
+							"pubId": "00a50f465ca74adb8cf3249af32e4cb2",
+							"subId": "c7457ba7eef24a5aa28a6317d724fdc7",
+							"id": "close",
+							"type": "icon-button"
+						}
+					]
+				],
+				"pubId": "b64019bc48f2448dab80fcfd254a44ce",
+				"subId": "a40e8c59b6ed4fc3bedc0db7fd347de4",
+				"id": "dialogHeader_1",
+				"type": "block"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"rows": [
+								[
+									{
+										"id": "textField",
+										"type": "text-input",
+										"pubId": "222fbb96cdbf4a599f17933d36a77fed",
+										"exclude": false
+									}
+								]
+							],
+							"id": "section",
+							"type": "section-2",
+							"pubId": "e66f909d41a94a6587b8bf49a199b69d",
+							"exclude": false
+						}
+					]
+				],
+				"styles": [],
+				"pubId": "9b8ffed1237741b8b2e7ba457e8c10be",
+				"label": "Save Confirm Content",
+				"subId": "c67d616b1ece48abaeab4eec3f70710c",
+				"id": "dialog_content_save_confirm",
+				"type": "dialog-content",
+				"exclude": false
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"rows": [
+								[
+									{
+										"pubId": "f0e766cdc61a45e5bcae78d7763c6f89",
+										"subId": "4f59ff7050ab4bdcbc4de4fadc2b2c76",
+										"exclude": false,
+										"id": "cancel",
+										"type": "button"
+									},
+									{
+										"pubId": "817ae2d3c1b84402b8ff37d3d9d8b77b",
+										"subId": "78bfadb7a9694d65b47b6d48e1d19b5c",
+										"id": "confirm",
+										"type": "button-resume-form"
+									},
+									{
+										"pubId": "74b2ea03bb6a48a7ad30508736fdb701",
+										"subId": "b695edeeb14045c29e767285eaa6078d",
+										"id": "confirm_1",
+										"type": "button"
+									},
+									{
+										"pubId": "9a8cc0549c0c44a88a636f2d54d462a7",
+										"subId": "a1725a7a19b743d2ac904156eaf8c909",
+										"id": "okay",
+										"type": "button"
+									},
+									{
+										"pubId": "a33aafecc6a64bb4bc9925d1863345af",
+										"subId": "defad17543184a8693b616ca337afe6e",
+										"id": "cancel_1",
+										"type": "button"
+									}
+								]
+							],
+							"properties": {
+								"dialogNavButtons": "save",
+								"validationRef": "saveconfirm"
+							},
+							"pubId": "d7232c5b115f404c853ee5f3d0e51428",
+							"subId": "5e49ce4ad21c4dbb96b865b096c67eea",
+							"exclude": false,
+							"id": "dialog_navigation_bar_save_confirm",
+							"type": "dialog-navigation-bar"
+						}
+					]
+				],
+				"pubId": "ac339dcf21b34b2db8d9e179388b7ad4",
+				"subId": "50ead585f74e4a198aa3f799c7663b9c",
+				"id": "dialog_footer_save_confirm",
+				"type": "block",
+				"exclude": false
+			}
+		]
+	],
+	"properties": {
+		"ariaLabel": "Save Confirm"
+	},
+	"type": "dialog",
+	"blockInfo": {
+		"blockCode": "dialog-save-confirm",
+		"editLink": "https://maestro.avoka.com.au/maestro/secure/design/12718",
+		"publishLibraryId": 10988,
+		"designVersion": "1"
+	},
+	"category": "Dialogs",
+	"hasCustomPath": true,
+	"pathContext": "abs",
+	"path": "saveconfirm",
+	"hasCustomId": true,
+	"id": "saveconfirm",
+	"description": "",
+	"ruleTemplates": [
+		{
+			"type": "load",
+			"name": "Load",
+			"editor": "script",
+			"isAction": true,
+			"msg": "a script to run when the dialog loads"
+		}
+	]
+}

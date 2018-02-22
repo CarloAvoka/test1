@@ -1,0 +1,8 @@
+{
+  "label": "BS Date Field",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "date-picker"
+  ]
+}

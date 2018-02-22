@@ -1,0 +1,112 @@
+/*Fixing Tram Line Last LI*/
+form[name="form"] .av-tram-nav.av-menu .navbar-nav li.tram-last-menu-item{
+min-width:initial;
+}
+form[name="form"] .bs-max-width-73189.bs-tramline-container-62540{
+  padding:0 30px;
+}
+form[name="form"] .bs-tramline-container-62540{
+  
+
+}
+form[name="form"] .is-sticking{  
+
+  .bs-tramline-16726 .wdg-tram-line .wdg-tram-line-item{
+    &:before{
+      //background-color: @av-white-transparent;
+      background-color: #fff;
+    }
+    &.visited:after{
+      //border: 1px solid @av-white-transparent;
+      border: 1px solid #fff;
+      border-width: 0 0 2px 2px;
+    }
+    &.visited:before{
+      background-color: @av-primary-contrast;
+    }
+    &.visited.active:after, &.active:after{
+
+      border:2px @av-primary-contrast solid;
+      //background-color:@av-white-transparent;
+      background-color: #fff;
+    }
+    &.visited.active:before, &.active:before{
+      background-color: @av-primary-contrast;
+    }
+  }
+}
+form[name='form'] {
+
+  .bs-tramline-16726 {    
+    margin-top: 25px;
+    margin-bottom: 15px;
+    float: right;
+    .wdg-tram-line {		// Tram line
+      padding:0 !important;
+    }
+
+    .wdg-tram-line-item {		// Tram line item
+      border-color:@av-primary-contrast!important;
+      &:after{
+        content: '';
+        box-sizing: content-box;
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        border: 0;
+        background-color:@av-primary-contrast;
+        border-radius: 50%;
+        transform:translate(-48%, -50%);
+      }
+      &:before{
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-color: @av-primary-color;
+        border-radius: 14px;
+        border: 0;
+        transform:translate(-50%, -50%);
+      }
+      &.visited:after{
+        width: 7px;
+        height: 3px;
+        border: 1px solid #0188cc;
+        border-width: 0 0 2px 2px;
+        transform: translate(-50%, -68%) rotate(-45deg);
+        border-radius:0;
+        background-color:transparent;
+      }
+      &.visited:before{
+        background-color: @av-primary-contrast;
+      }
+
+      &.visited.active:after, &.active:after{
+        width:7px;
+        height:7px;
+        border:2px @av-primary-contrast solid;
+        background-color: @av-primary-color;
+        transform: translate(-50%, -50%) rotate(0deg);
+        border-radius:9px;
+
+      }
+      &.visited.active:before, &.active:before{
+        background-color: @av-primary-contrast;
+      }
+    }
+
+    .wdg-tram-line-active-image {		// Tram line active image
+      display:none;
+    }
+
+    .wdg-tram-line-inactive-image {		// Tram line inactive image
+      display:none;
+    }
+
+    .wdg-tram-line-visited-image {		// Tram line visited image
+      display:none;
+    }
+
+  }
+}

@@ -1,0 +1,23 @@
+@import (reference) "../mg-base/maguire";
+
+form[name="form"] {
+  .mg-section-2 {
+    padding:20px @page-gutters;
+    margin-bottom:20px;
+    @media(max-width:@screen-md) {
+      margin-bottom:0;
+      padding-top:60px;
+      padding:10px @mobile-page-gutters;
+    }
+    .wdg-section-2-info-text {
+      line-height: 1.15 !important;
+    }
+    .wdg-section-2-title {
+      color: @av-section-2-header-color;
+      font-size: @av-section-2-title-font-size;
+      margin-top: 0;
+      margin-bottom: 22px;
+      line-height: 1.15;
+    }
+  }
+}

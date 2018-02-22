@@ -1,0 +1,10 @@
+{
+  "label": "Form Help Option Container",
+  "block": {
+    "decs": {
+      "text-align": "center"
+    },
+    "blocks": {}
+  },
+  "file": "style.less"
+}

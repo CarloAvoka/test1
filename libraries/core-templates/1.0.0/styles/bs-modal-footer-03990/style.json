@@ -1,0 +1,8 @@
+{
+  "label": "BS modal footer",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

@@ -1,0 +1,29 @@
+<div class="progress-container" data-ng-controller="ProgressBarController" data-ng-if="Form.$Pages.currentPage.$navVisible && !Form.$Pages.currentPage.properties.offMenu && Form.$Pages.visiblePageCount > 1 && !avReceipt">
+	<div role="presentation" class="wdg-progress-bar-heading-docked animate-height-if" data-ng-if="data.docked">
+		{{Form.getCurrentPageNumber()}}&nbsp/&nbsp{{Form.getNavPageCount()}}&nbsp&nbsp
+	</div>
+	<div class="progress-wrapper-outer">	
+		<div class="progress-wrapper">	
+			<div class="progress-bar-wrapper">		
+				<div class="wdg-progress-bar-background"></div>		
+				<div data-ng-style="{'width': ((100 / Form.getNavPageCount()) * Form.getCurrentPageNumber()) + '%'}"	class="wdg-progress-bar"></div>
+				<ol class="wdg-page-group-icon-container" data-ng-class="{'one-page-visible': Form.getNavPageCount() === 1}">
+					<li id="{{item.id}}_pseb_{{$index}}" class="wdg-page-segment-container" 
+						data-ng-repeat="page in Form.$Pages.flatPages | filter : visiblePageFilter"				
+						data-toggle="tooltip" data-placement="top" title="{{page.label}}"
+						data-ng-disabled="page.$navDisabled"
+						data-ng-class="{'show-page-icon': item.properties.displayPageIcon, 'show-group-icon': (page.isFirstInGroup || !page.$navGroup) && item.properties.displayGroupIcon, 'page-active': page.$navSelected, 'page-visited': Form.$Pages.flatPages.indexOf(page) <= Form.$Pages.flatPages.indexOf(Form.$Pages.currentPage)}">			
+					 </li>			 
+				</ol>
+			</div>
+		</div>
+		<div role="presentation" class="progress-subtext-wrapper animate-height-if" data-ng-repeat="p in Form.$Pages.flatPages" data-ng-if="p.$navSelected && !data.docked">		
+			<div class="wdg-progress-bar-heading">
+				Page&nbsp{{Form.getCurrentPageNumber()}}&nbspof&nbsp{{Form.getNavPageCount()}}&nbsp: 
+				<span data-ng-repeat="g in Form.$Pages.tree" data-ng-if="g.$navSelected && g.$navPages || g.$navPages[0].$navSelected" 
+				data-av-compile data-ng-bind-html="g.label + ' -'"></span>&nbsp{{p.label}}
+			</div>
+		</div>
+	</div>
+</div>
+<!--//1 ch-->

@@ -1,0 +1,8 @@
+{
+  "label": "BS Functional Bar Background",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

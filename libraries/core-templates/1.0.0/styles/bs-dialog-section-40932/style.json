@@ -1,0 +1,8 @@
+{
+  "label": "BS Dialog Section",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "section-2"
+  ]
+}

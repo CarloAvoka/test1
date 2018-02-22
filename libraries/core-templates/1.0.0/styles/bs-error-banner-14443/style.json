@@ -1,0 +1,8 @@
+{
+  "label": "BS Error Banner",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "sticky-panel"
+  ]
+}

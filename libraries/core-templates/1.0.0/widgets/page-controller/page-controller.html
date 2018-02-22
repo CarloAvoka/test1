@@ -1,0 +1,17 @@
+<div data-av-navigator class="av-menu">
+	<main role="main" class="container-fluid av-menu-page" data-ng-if="Pages">
+		<div data-ng-if="Resource.design"
+			 class="av-nav-content" data-widget-children>
+		</div>
+		<div data-ng-if="Resource.generated && !avReceipt" data-view-stack-delay="{{item.properties.transitionDelay}}"
+			 data-view-stack-height="true" data-view-stack data-index="Pages.viewIndex" class="av-page-area">
+			<section id="{{::page.id}}" data-ng-repeat="page in Pages.flatPages" class="vstk-out"
+					 role="tabpanel" aria-hidden="{{!page.$navSelected}}" data-ng-include="page.$viewTemplate"></section>
+		</div>
+		<div data-ng-if="avReceipt" class="av-nav-content">
+			<section data-ng-repeat="page in Pages.flatPages" class="row" role="tabpanel"
+                 data-ng-class="{'force-page-break': page.properties.forcePageBreak, 'stop-page-break': Pages.flatPages[$index-1].$navVisible === false}"
+				 data-ng-include="'nav-page_' + page.id"></section>
+		</div>
+	</main>
+</div>

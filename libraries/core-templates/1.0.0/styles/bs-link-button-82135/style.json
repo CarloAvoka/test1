@@ -1,0 +1,16 @@
+{
+  "label": "BS Link Button",
+  "block": {
+    "decs": {},
+    "blocks": {
+      "wdg-button": {
+        "decs": {},
+        "blocks": {}
+      }
+    }
+  },
+  "file": "style.less",
+  "widgets": [
+    "button"
+  ]
+}

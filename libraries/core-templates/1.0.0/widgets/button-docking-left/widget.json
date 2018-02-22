@@ -1,0 +1,11 @@
+{
+	"label": "Docking button left",
+	"category": "Buttons",
+	"type": "button-docking",
+	"html": "button-docking-left.html",
+	"css": "button-docking-left.css",
+	"span": {"xs": 12, "sm": 6, "md": 4, "lg": 4},
+	"styles": [
+		"av-global-layout"
+	]
+}

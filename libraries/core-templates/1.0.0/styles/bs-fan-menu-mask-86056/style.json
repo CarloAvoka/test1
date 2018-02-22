@@ -1,0 +1,8 @@
+{
+  "label": "BS Fan Menu Mask",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

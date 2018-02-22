@@ -1,0 +1,30 @@
+{
+	"block": {
+		"blocks": {
+			"wdg-progress-bar": {
+				"blocks": {},
+				"decs": {
+					"@background": "#cccccc, 76"
+				}
+			},
+			"wdg-progress-bar-background": {
+				"blocks": {},
+				"decs": {
+					"@background": "#cccccc, 25"
+				}
+			},
+			"wdg-progress-page-icon": {
+				"blocks": {},
+				"decs": {
+					"color": "#369929"
+				}
+			}
+		},
+		"decs": {}
+	},
+	"file": "style.less",
+	"label": "BS mobile progress",
+	"widgets": [
+		"mobile-progress-bar"
+	]
+}

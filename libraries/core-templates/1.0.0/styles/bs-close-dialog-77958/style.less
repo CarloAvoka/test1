@@ -1,0 +1,63 @@
+form[name='form'] {
+	.bs-close-dialog-77958 {
+      width:32px;
+      height:32px;
+      position:absolute;
+      right:32px;
+      top:32px;
+      z-index:9999;
+      .wdg-button {		// Button      
+        width: 32px;
+        height: 32px;
+        opacity: 0.6;
+        background:none;
+        padding:0;
+        margin:0;
+         &:before, &:after{
+           position: absolute;
+           top:0;
+           left:50%;
+           right:50%;
+           content: ' ';
+           height: 33px;
+           width: 2px;
+           //background-color:@av-primary-contrast;
+           background-color: #fff;
+           .transition(0.5s all);         
+        }
+        &:before{
+          transform: rotate(45deg);
+        }
+        &:after{
+          transform: rotate(135deg);
+        }
+        &:hover, &:focus{
+          opacity:1;
+          outline:none;      
+        }
+        &:hover{
+          &:before{
+            transform: rotate(225deg);
+            height: 20px;
+            top:7px;
+          }
+          &:after{
+            transform: rotate(315deg);
+            height: 20px;
+            top:7px;
+          }        
+        }
+        &:active{
+          box-shadow:none;
+        }
+      }
+      .wdg-button-icon {		// Button icon
+
+      }
+
+      .wdg-button-label {		// Button label
+
+      }
+
+	}
+}

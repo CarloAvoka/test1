@@ -1,0 +1,8 @@
+{
+  "label": "BS online chat",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "text-input"
+  ]
+}

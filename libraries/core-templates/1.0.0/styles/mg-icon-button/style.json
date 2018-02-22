@@ -1,0 +1,37 @@
+{
+  "label": "Maguire Icon Button",
+  "file": "style.less",
+  "block": {
+    "decs": {},
+    "blocks": {
+      "wdg-button": {
+        "decs": {
+          "@background": "none",
+          "color": "#0c384b",
+          "font-size": "12px",
+          "padding-top": "6px",
+          "padding-bottom": "6px",
+          "padding-left": "15px",
+          "padding-right": "15px",
+          "text-align": "left"
+        },
+        "blocks": {}
+      },
+      "wdg-button-icon": {
+        "decs": {
+          "color": "#ffffff",
+          "border-style": "none",
+          "border-top-left-radius": "14px",
+          "border-top-right-radius": "14px",
+          "border-bottom-left-radius": "14px",
+          "border-bottom-right-radius": "14px"
+        },
+        "blocks": {}
+      },
+      "wdg-button-label": {
+        "decs": {},
+        "blocks": {}
+      }
+    }
+  }
+}

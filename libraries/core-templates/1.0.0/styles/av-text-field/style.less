@@ -1,0 +1,49 @@
+form[name='form'] {
+	.av-text-field {
+	
+		.wdg-label {		// Label
+		
+		}
+
+		.wdg-input {		// 
+             outline: none;
+             box-shadow: none;
+             height: 40px;
+             border-radius: 0px;
+             border: 1px solid #636f71;
+             border-radius:0!important;
+             box-shadow:none;
+               &:focus{
+               box-shadow:none;
+               }
+      }  
+      &:after {
+              content: "";
+              position: absolute;
+              z-index: 50;
+              width: auto;
+              height: 0;
+              left: 0;
+              right: 0;
+              bottom: 16px;
+              margin-left: 0px;
+              margin-right: 10px;
+              border-bottom: 2px solid;
+              .override-color(border-bottom-color, @av-primary-color, @av-focus-color);
+              transform: scale(0.5);
+              opacity: 0;
+              transition: transform 0.2s, opacity 0.2s;
+           }          
+        &.av-focus {
+          &:after {
+            display: block;
+            transform: scale(1);
+            opacity: 1;
+          } 
+        }  &.has-error {
+          .wdg-input {
+              border-bottom: 1px solid #ed5752;
+              }
+           }
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"category": "Template",
+	"label": "Docking Controller",
+	"icon": "controller.png",
+	"html": "dockingController.html",
+	"js":	"docking-controller.js",
+	"propDefs": {		
+		"dockPosition": {
+			"label": "Docking scroll position (px)",
+			"type": "integer",
+			"value": 60,
+			"category" : "Docking Controller"
+		}
+	},
+  	"rows": [
+		[
+			{		
+				"label": "Scroll Position",
+				"type": "data-field",
+				"htmlLabel": "Scroll Position",
+				"id": "scrollPosition"
+			},
+			{		
+				"label": "Docked",
+				"type": "data-field",
+				"htmlLabel": "Docked",
+				"id": "docked"
+			},
+			{		
+				"label": "Undocked",
+				"type": "data-field",
+				"htmlLabel": "Undocked",
+				"id": "undocked"
+			}
+		]
+	]
+}

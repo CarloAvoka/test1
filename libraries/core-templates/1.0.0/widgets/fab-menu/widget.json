@@ -1,0 +1,209 @@
+{
+	"category": "Custom Components",
+	"label": "Functional Menu - FAB menu",
+	"icon": "fab-menu.png",
+	"html": "fab-menu.html",
+	"js":	"fab-menu.js",
+	"css": "fab-menu.css",
+	"rows": [
+		[
+			{
+				"span": {
+					"sm": 1,
+					"md": 1,
+					"lg": 1,
+					"xs": 1
+				},
+				"offset": {
+					"xs": "11",
+					"sm": "11",
+					"md": "11",
+					"lg": "11"
+				},
+				"label": "Functional Menu",
+				"styles": [
+					"av-button-navigation"
+				],
+				"properties": {
+					"icon": "fa fa-times",
+					"offIcon": "fa fa-navicon"
+				},
+				"type": "button-toggle-icon",
+				"path": "FunctionalMenu",
+				"pubId": "6d8349dcfefa43e0b629a07c41b249ce",
+				"htmlLabel": "Functional Menu",
+				"hideLabel": true,
+				"animateVisibility": true,
+				"id": "functionalMenu"
+			}
+		],
+		[
+			{
+				"span": {
+					"md": 1,
+					"lg": 1,
+					"xs": 1,
+					"sm": 1
+				},
+				"label": "Exit",
+				"styles": [
+					"av-button-navigation",
+					"bs-functional-button-items-64706"
+				],
+				"properties": {
+					"icon": "fa fa-close"
+				},
+				"type": "button",
+				"path": "",
+				"htmlLabel": "Exit",
+				"rules": {
+					"sh": "data.functionalMenu && Form.getItemProperty(\"data.functionalMenuFabMenu\",\"functionalButtonExit\")"
+				},
+				"animateVisibility": false,
+				"pubId": "618724928da14126a1ea9dda71f4b9b6",
+				"hideLabel": false,
+				"id": "exit"
+			},
+			{
+				"span": {
+					"md": 1,
+					"lg": 1,
+					"xs": 1,
+					"sm": 1
+				},
+				"label": "Resume",
+				"styles": [
+					"av-button-navigation",
+					"bs-functional-button-items-64706"
+				],
+				"properties": {
+					"icon": "fa fa-reply"
+				},
+				"type": "button",
+				"path": "",
+				"htmlLabel": "Resume",
+				"rules": {
+					"sh": "Form.getItemProperty(\"data.functionalMenuFabMenu\",\"functionalButtonResume\") && data.functionalMenu"
+
+				},
+				"animateVisibility": false,
+				"pubId": "80892dfc989d43dd9cfa852107d2d1b4",
+				"hideLabel": false,
+				"id": "resume"
+			},
+			{
+				"span": {
+					"md": 1,
+					"lg": 1,
+					"xs": 1,
+					"sm": 1
+				},
+				"label": "Help",
+				"styles": [
+					"av-button-navigation",
+					"bs-functional-button-items-64706"
+				],
+				"properties": {
+					"icon": "fa fa-question"
+				},
+				"type": "button",
+				"path": "",
+				"htmlLabel": "Help",
+				"rules": {
+
+					"sh": "Form.getItemProperty(\"data.functionalMenuFabMenu\",\"functionalButtonHelp\") && data.functionalMenu"
+				},
+				"animateVisibility": false,
+				"pubId": "97601a07e3304ceab704b6152d1174b9",
+				"hideLabel": false,
+				"id": "help"
+			},
+			{
+				"span": {
+					"md": 1,
+					"lg": 1,
+					"xs": 1,
+					"sm": 1
+				},
+				"label": "Share",
+				"styles": [
+					"av-button-navigation",
+					"bs-functional-button-items-64706"
+				],
+				"properties": {
+					"icon": "fa fa-share-alt"
+				},
+				"type": "button",
+				"path": "",
+				"htmlLabel": "Share",
+				"rules": {
+					"sh": "Form.getItemProperty(\"data.functionalMenuFabMenu\",\"functionalButtonShare\") && data.functionalMenu"
+
+				},
+				"animateVisibility": false,
+				"pubId": "b5002e83c936475d81cabdae77a20513",
+				"hideLabel": false,
+				"id": "share"
+			}
+		]
+
+	],
+	"type": "block",
+	"path": "",
+	"htmlLabel": "Functional Menu - FAB menu",
+	"blockInfo": {
+		"editLink": "https://tm.maestro.avoka.com/maestro/secure/design/5407",
+		"publishLibraryId": 5704,
+		"blockCode": "floating-functional-component"
+	},
+	"description": "",
+
+	"id": "functionalMenuFabMenu",
+	"propDefs": {
+		"functionalButtonResume": {
+			"label": "Functional Button Resume",
+			"category": "Functional Buttons",
+			"type": "boolean",
+			"value": true,
+			"helpText": "Hide Resume Button"
+		},
+		"functionalButtonShare": {
+			"label": "Functional Button Share",
+			"category": "Functional Buttons",
+			"type": "boolean",
+			"value": true,
+			"helpText": "Hide Share Button"
+		},
+		"functionalButtonHelp": {
+			"label": "Functional Button Help",
+			"category": "Functional Buttons",
+			"type": "boolean",
+			"value": true,
+			"helpText": "Hide Help Button"
+		},
+		"functionalButtonExit": {
+			"label": "Functional Button Exit",
+			"category": "Functional Buttons",
+			"type": "boolean",
+			"value": true,
+			"helpText": "Hide Exit Button"
+		},
+		"menuLayout": {
+			"label": "Menu Layout",
+			"category": "Functional Menu",
+			"type": "option",
+			"value": "fab-menu",
+			"helpText": "Choose how the menu displays",
+			"options": [
+				{
+					"label": "Vertical Menu ",
+					"value": " vertical-menu"
+				},
+				{
+					"label": "Fab Menu ",
+					"value": " fab-menu"
+				}
+			]
+		}
+	}
+}

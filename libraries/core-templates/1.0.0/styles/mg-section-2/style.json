@@ -1,0 +1,37 @@
+{
+	"block": {
+		"blocks": {
+			"wdg-section-2": {
+				"blocks": {},
+				"decs": {}
+			},
+			"wdg-section-2-content": {
+				"blocks": {},
+				"decs": {
+					"padding-left": "5px"
+				}
+			},
+			"wdg-section-2-header": {
+				"blocks": {},
+				"decs": {
+					"padding-right": "20px"
+				}
+			},
+			"wdg-section-2-info-text": {
+				"blocks": {},
+				"decs": {
+					"font-size": "15px",
+					"padding-bottom": "22px"
+				}
+			}
+		},
+		"decs": {
+			"padding-bottom": "30px",
+			"padding-left": "30px",
+			"padding-right": "30px",
+			"padding-top": "19px"
+		}
+	},
+	"file": "mg-section-2.less",
+	"label": "Section 2"
+}

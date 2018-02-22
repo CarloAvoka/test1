@@ -1,0 +1,374 @@
+{
+	"label": "BS Cancel Form",
+	"rows": [
+		[
+			{
+				"rows": [
+					[
+						{
+							"id": "close",
+							"type": "icon-button",
+							"pubId": "81ab3bfe44644a55a558697d80247f00"
+						}
+					]
+				],
+				"id": "dialogHeader_1",
+				"type": "block",
+				"pubId": "fe1cf03c645344499f240f27f798542d"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"label": "Confirm Cancellation",
+							"rows": [
+								[
+									{
+										"label": "Cancel Confirm Text",
+										"htmlLabel": "Are you sure you want to cancel your submission? Caution: all data entered will be lost.",
+										"styles": [
+											"submit-success-message"
+										],
+										"type": "text-display",
+										"pubId": "198a22cdd77d41d0ae64ae130817922f",
+										"exclude": false,
+										"id": "cancel_confirm_text"
+									},
+									{
+										"label": "Options",
+										"rows": [
+											[
+												{
+													"span": {
+														"md": 6,
+														"lg": 6
+													},
+													"label": "Help Option",
+													"rows": [
+														[
+															{
+																"properties": {},
+																"pubId": "db77b9edb6b640159ce91b8face355b3",
+																"subId": "b1318f7593d14e64a914fb7274e32b1b",
+																"id": "info_block_image_1",
+																"type": "image"
+															},
+															{
+																"rows": [
+																	[
+																		{
+																			"span": {
+																				"xs": "0",
+																				"sm": "0",
+																				"md": "0",
+																				"lg": "0"
+																			},
+																			"pubId": "6b4785fb7a674fc5865f9f88786f32b3",
+																			"subId": "e349c33a8a244107942968737f085a50",
+																			"id": "header_5",
+																			"type": "text-display"
+																		}
+																	],
+																	[
+																		{
+																			"label": "Content Help Option",
+																			"htmlLabel": "If you need any assistance completing your form, let us help you.",
+																			"pubId": "ac8089c56eb94e2f9a76a9522ef5b9b8",
+																			"subId": "a0f122e70d81447bae6f63fe3b381734",
+																			"id": "content_help_option",
+																			"type": "text-display"
+																		}
+																	],
+																	[
+																		{
+																			"span": {
+																				"md": 12,
+																				"lg": 12
+																			},
+																			"label": "Get help",
+																			"styles": [
+																				"link-button-style"
+																			],
+																			"type": "button",
+																			"rules": {
+																				"click": "Form.showDialog(\"formhelp\");"
+																			},
+																			"pubId": "93dd6fe450a44dbbbcc6d9773a7ee90f",
+																			"id": "get_help"
+																		}
+																	]
+																],
+																"pubId": "faeafbe9afe84502b2dcaea76bce503c",
+																"label": "Container",
+																"subId": "3d8afb72dfec47f3a61a08907884c96c",
+																"id": "container_help_option",
+																"type": "block"
+															}
+														]
+													],
+													"type": "advice-block-info",
+													"pubId": "720dbaa4449d4aaabd9bdd9c9f92ba38",
+													"id": "help_option"
+												},
+												{
+													"span": {
+														"md": 6,
+														"lg": 6
+													},
+													"label": "Save Option",
+													"rows": [
+														[
+															{
+																"properties": {},
+																"pubId": "bce62f602fee44ba9839c5e6454c579d",
+																"subId": "b1318f7593d14e64a914fb7274e32b1b",
+																"id": "info_block_image_2",
+																"type": "image"
+															},
+															{
+																"rows": [
+																	[
+																		{
+																			"span": {
+																				"xs": "0",
+																				"sm": "0",
+																				"md": "0",
+																				"lg": "0"
+																			},
+																			"pubId": "ff92bcaa79204ddf81f19b3c836e190b",
+																			"subId": "e349c33a8a244107942968737f085a50",
+																			"id": "header_6",
+																			"type": "text-display"
+																		}
+																	],
+																	[
+																		{
+																			"label": "Content Save Option",
+																			"htmlLabel": "Did you know you can securely save your progress and resume at a later time?",
+																			"pubId": "668eca97df5444038727276478676591",
+																			"subId": "a0f122e70d81447bae6f63fe3b381734",
+																			"id": "content_2",
+																			"type": "text-display"
+																		}
+																	],
+																	[
+																		{
+																			"span": {
+																				"md": 12,
+																				"lg": 12
+																			},
+																			"label": "Save for later",
+																			"styles": [
+																				"link-button-style"
+																			],
+																			"type": "button",
+																			"rules": {
+																				"click": "Form.showDialog(\"saveconfirm\");"
+																			},
+																			"pubId": "11b77efbd2fc48e2bc2ab5ffb8dbe683",
+																			"id": "save_for_later"
+																		}
+																	]
+																],
+																"pubId": "f58dc0762d9f4b01a5eb0b03e2006420",
+																"label": "Container",
+																"subId": "3d8afb72dfec47f3a61a08907884c96c",
+																"id": "container_save_option",
+																"type": "block"
+															}
+														]
+													],
+													"type": "advice-block-info",
+													"pubId": "c4b7e7867d1940e19ec032364e0e42fe",
+													"id": "save_option"
+												}
+											]
+										],
+										"type": "block",
+										"styles": [
+											"mg-cancel-confirm-info-blocks"
+										],
+										"pubId": "37dceeed7f5c44d7b11f2c1e11852ddb",
+										"exclude": false,
+										"id": "options"
+									}
+								],
+								[
+									{
+										"label": "Feedback",
+										"rows": [
+											[
+												{
+													"span": {
+														"md": 12,
+														"lg": 12
+													},
+													"label": "What is the main reason for your cancellation?",
+													"properties": {
+														"options": [
+															{
+																"label": "I don't have all the information required",
+																"value": "Lacking Information"
+															},
+															{
+																"label": "I don't understand the questions",
+																"value": "Don't Understand"
+															},
+															{
+																"label": "I don't have the time to complete it now",
+																"value": "Out of Time"
+															},
+															{
+																"label": "I don't know why you need this information",
+																"value": "Relevance Unclear"
+															},
+															{
+																"label": "I am experiencing technical difficulties",
+																"value": "Technical Issue"
+															},
+															{
+																"label": "I just changed my mind",
+																"value": "Changed Mind"
+															},
+															{
+																"label": "Other",
+																"value": "Other"
+															}
+														]
+													},
+													"type": "dropdown",
+													"hasCustomId": false,
+													"path": "AbandonmentReason",
+													"hasCustomPath": true,
+													"pathContext": "sys",
+													"pubId": "a21a1502ac76416b923d1fd64c5694df",
+													"id": "what_is_the_main_reason_for_your_cancellation"
+												}
+											],
+											[
+												{
+													"label": "Comments",
+													"type": "text-area",
+													"path": "AbandonmentComments",
+													"hasCustomPath": true,
+													"pathContext": "sys",
+													"pubId": "21d9bdc0b8094cc98df766975fe7f09f",
+													"id": "comments"
+												}
+											]
+										],
+										"properties": {
+											"infoText": "We'd really appreciate you letting us know why you are cancelling your submission."
+										},
+										"type": "section-2",
+										"pubId": "350cf017b44a461b8418b642c7a5f1fe",
+										"id": "feedback"
+									}
+								]
+							],
+							"properties": {
+								"formName": "",
+								"additionalText": ""
+							},
+							"type": "nav-page",
+							"pubId": "8ff44421e031489e83fa57edae29eca9",
+							"exclude": false,
+							"id": "confirm_cancellation"
+						}
+					]
+				],
+				"pubId": "0e1c6a6d41ae404e85b8dd3061a1984d",
+				"label": "Cancel Confirm Content",
+				"subId": "c67d616b1ece48abaeab4eec3f70710c",
+				"id": "dialog_content_cancel_confirm",
+				"type": "dialog-content"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"rows": [
+								[
+									{
+										"pubId": "b6e26f39a1754ef6b11a943e1548bb9a",
+										"subId": "4f59ff7050ab4bdcbc4de4fadc2b2c76",
+										"id": "cancel_4",
+										"type": "button"
+									},
+									{
+										"pubId": "ee86a6f41404425187e38cc92272e3e5",
+										"subId": "78bfadb7a9694d65b47b6d48e1d19b5c",
+										"id": "confirm_4",
+										"type": "button-resume-form"
+									},
+									{
+										"pubId": "5407f002a4184f3bba4b71f0e15dc267",
+										"subId": "b695edeeb14045c29e767285eaa6078d",
+										"id": "confirm_5",
+										"type": "button"
+									},
+									{
+										"pubId": "45a23f00a8194a9b92f59ebd5e7fa8c8",
+										"subId": "a1725a7a19b743d2ac904156eaf8c909",
+										"id": "okay_2",
+										"type": "button"
+									},
+									{
+										"pubId": "314b31bce4b74da78498074f50d480f6",
+										"subId": "defad17543184a8693b616ca337afe6e",
+										"id": "cancel_5",
+										"type": "button"
+									}
+								]
+							],
+							"properties": {
+								"dialogNavButtons": "abandon",
+								"validationRef": "cancelconfirm"
+							},
+							"pubId": "6c2cc09e967a4deba0901802070b0009",
+							"subId": "5e49ce4ad21c4dbb96b865b096c67eea",
+							"exclude": true,
+							"id": "dialog_navigation_bar",
+							"type": "dialog-navigation-bar"
+						}
+					]
+				],
+				"type": "block",
+				"pubId": "0fbf0ed09bdc49828a565c108ca6592e",
+				"subId": "50ead585f74e4a198aa3f799c7663b9c",
+				"id": "dialog_footer_cancel_confirm"
+			}
+		]
+	],
+	"properties": {
+		"ariaLabel": "Cancel Confirm"
+	},
+	"type": "dialog",
+	"blockInfo": {
+		"blockCode": "dialog-cancel-confirm",
+		"editLink": "https://maestro.avoka.com.au/maestro/secure/design/12717",
+		"publishLibraryId": 10988,
+		"designVersion": "1"
+	},
+	"description": "BS style close button",
+	"category": "Dialogs",
+	"path": "",
+	"hasCustomPath": true,
+	"pathContext": "abs",
+	"hasCustomId": true,
+	"id": "cancelconfirm",
+	"exclude": false,
+	"ruleTemplates": [
+		{
+			"type": "load",
+			"name": "Load",
+			"editor": "script",
+			"isAction": true,
+			"msg": "a script to run when the dialog loads"
+		}
+	]
+}

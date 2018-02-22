@@ -1,0 +1,8 @@
+{
+  "label": "BS Float Right",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "button"
+  ]
+}

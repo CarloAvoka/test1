@@ -1,0 +1,132 @@
+{
+	"label": "Dialog",
+	"rows": [
+		[
+			{
+				"label": "Dialog header",
+				"rows": [
+					[
+						{
+							"label": "Close",
+							"styles": [
+								"av-global-layout",
+								"bs-general-dialog-close-85088"
+							],
+							"type": "icon-button",
+							"path": "",
+							"exclude": false,
+							"hideLabel": true,
+							"pubId": "1056a8426290467db5649e4a3e08ea47",
+							"htmlLabel": "Close",
+							"rules": {
+								"click": "Form.showDialog();"
+							},
+							"id": "close"
+						}
+					]
+				],
+				"type": "block",
+				"path": "",
+				"exclude": false,
+				"htmlLabel": "Dialog header",
+				"pubId": "0f48f8fb12ee46c8b5dede2e4658f8a1",
+				"id": "dialogHeader"
+			}
+		],
+		[
+			{	
+				"label": "Dialog Body",
+				"rows": [
+					[
+						{
+							"rows": [
+								[{
+									"rows": [
+										[]
+									],
+									"styles": [
+										"mg-section-2",
+										"bs-dialog-content-scroll-92184",
+										"bs-save-dialog-text-82753"
+									],
+									"exclude": false,
+									"path": "",
+									"type": "section-2",
+									"id": "section_2",
+									"pubId": "eb8bf3360b1f4a3db69b521b51208ccb"
+								}]
+							],
+							"type": "dialog-content",
+							"pubId": "c67d616b1ece48abaeab4eec3f70710c",
+							"id": "dialogContent"
+						}
+					],
+					
+					[
+						{
+							"label": "Dialog Footer",
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												
+												{
+													"span": {
+														"md": 4,
+														"lg": 4
+													},
+													"offset": {
+														"md": "4",
+														"lg": "4"
+													},
+													"rules": {
+														"click": "Form.showDialog(\"\");",
+														"sh": ""
+													},
+													"styles": ["bs-dialog-button-12962"],
+													"pubId": "6471b7e4d063409483e51ff9138ed85e",
+													"subId": "fe2f5e305ba14cc989ec6e19e3d0b551",
+													"id": "okay",
+													"type": "button"
+												}
+											]
+										],
+										"type": "block",
+										"pubId": "5e49ce4ad21c4dbb96b865b096c67eea",
+										"id": "dialogFooterBlock"
+									}
+								]
+							],
+							"type": "block",
+							"styles": [
+								"bs-dialog-navigation-56885"
+							],
+							"pubId": "50ead585f74e4a198aa3f799c7663b9c",
+							"id": "dialogFooter"
+						}
+					]
+				],
+				"styles": ["bs-max-width-73189"],
+				"id": "dialogBody",
+				"type": "block"				
+			}
+		]		
+		
+	],
+	"isDialog": true,
+	"type": "block",
+	"styles": ["av-dialog-fullscreen"],
+	"description": "",
+	"id": "dialog",
+	"category": "Containers",
+	"ruleTemplates": [
+		{
+			"type": "load",
+			"name": "Load",
+			"editor": "script",
+			"isAction": true,
+			"msg": "a script to run when the dialog loads"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+  "label": "Wizard Navigator Bar",
+  "block": {
+    "decs": {
+      "@background": "#DCE0E9, 100",
+      "border-top-left-radius": "24px",
+      "border-top-right-radius": "24px",
+      "border-bottom-left-radius": "24px",
+      "border-bottom-right-radius": "24px"
+    },
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "navigator-wizard-bar"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "label": "AV fullscreen dialog",
+  "block": {
+    "decs": {
+      "color": "#a8a4a4"
+    },
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "dialog"
+  ]
+}

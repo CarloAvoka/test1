@@ -1,0 +1,8 @@
+{
+  "label": "BS functional fab menu",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

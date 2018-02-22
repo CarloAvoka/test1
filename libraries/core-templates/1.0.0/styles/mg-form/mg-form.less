@@ -1,0 +1,60 @@
+@import (reference) "../mg-base/maguire";
+
+form[name='form'] {
+
+	&.mg-form {
+		max-width: @av-max-form-width;
+        padding: 0px;
+		@media (max-width: 767px) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.form-group {
+			padding: 0 11px 0 0;
+		}
+
+		.form-control {
+			min-height: 31px;
+			line-height: 1;
+			padding: 7px 7px;
+			font-size: 13px;
+			color: black;
+		}
+
+		.btn {
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.btn-default {
+			background: white;
+			color: #39535B;
+			border: solid 1px #C6C6C9;
+		}
+
+		.btn-primary {
+			background: @av-neutral-contrast;
+			color: white;
+		}
+
+		.btn.dropdown-toggle {
+			line-height: 15px;
+			padding: 7px 12px;
+			font-size: 13px;
+		}
+
+		// Disabled Styles
+		button[disabled],
+		input[disabled],
+		textarea[disabled],
+		select[disabled] {
+			cursor: not-allowed;
+		}
+
+		button[disabled] {
+			opacity: 0.7;
+			filter: "alpha(opacity=70)";
+		}
+	}
+}

@@ -1,0 +1,154 @@
+form[name="form"].av-receipt {
+  max-width: 800px;
+  font-family: Nimbus Sans L Regular, Nimbus Sans L, Verdana, sans-serif !important;
+  font-size: 8pt;
+  background: #FFFFFF;
+  /* Field styles */
+}
+form[name="form"].av-receipt > [data-widget-children] {
+  background-color: #FFFFFF;
+}
+form[name="form"].av-receipt .av-repeat-delete,
+form[name="form"].av-receipt .av-repeat-button {
+  display: none;
+}
+form[name="form"].av-receipt .av-section-1,
+form[name="form"].av-receipt .av-menu,
+form[name="form"].av-receipt .av-nav-content,
+form[name="form"].av-receipt .av-nav-group {
+  float: none !important;
+  display: block !important;
+}
+form[name="form"].av-receipt .error-block {
+  display: none;
+}
+form[name="form"].av-receipt .av-global-layout {
+  padding-bottom: 10px !important;
+}
+form[name="form"].av-receipt textarea {
+  overflow: hidden;
+}
+form[name="form"].av-receipt .form-control {
+  height: 31px;
+}
+form[name="form"].av-receipt .text-area-receipt {
+  height: 100%;
+  word-wrap: break-word;
+}
+form[name="form"].av-receipt .input-group {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form[name="form"].av-receipt .input-group .input-group-addon {
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 1px #ccc solid;
+}
+form[name="form"].av-receipt .input-group .form-control {
+  border: none;
+  height: 29px;
+  min-height: 29px;
+}
+form[name="form"].av-receipt .av-radio i:before {
+  -webkit-transform: translate(-50%, -46%);
+  -ms-transform: translate(-50%, -46%);
+  transform: translate(-50%, -46%);
+}
+form[name="form"].av-receipt .av-select-overlay .av-select-icon {
+  display: none !important;
+}
+form[name="form"].av-receipt .av-popover-btn {
+  display: none !important;
+}
+form[name="form"].av-receipt .av-nav-content .force-page-break {
+  page-break-before: always;
+}
+form[name="form"].av-receipt .av-nav-content .force-page-break.stop-page-break,
+form[name="form"].av-receipt .av-nav-content .force-page-break:first-child {
+  page-break-before: auto;
+}
+form[name="form"].av-receipt .clearfix:after,
+form[name="form"].av-receipt .container:after,
+form[name="form"].av-receipt .container-fluid:after,
+form[name="form"].av-receipt .clearfix:before,
+form[name="form"].av-receipt .container:before,
+form[name="form"].av-receipt .container-fluid:before {
+  content: none !important;
+}
+form[name="form"].av-receipt main .row {
+  display: table !important;
+  table-layout: fixed;
+  width: 100%;
+}
+form[name="form"].av-receipt main .row:before {
+  content: none !important;
+}
+form[name="form"].av-receipt main .row:after {
+  content: " " !important;
+  display: block !important;
+}
+form[name="form"].av-receipt main .row > .av-item-container {
+  display: table-cell !important;
+  float: none !important;
+  zoom: 1;
+}
+form[name="form"].av-receipt main .row > .av-global-layout {
+  page-break-inside: avoid;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-12 {
+  left: 100%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-11 {
+  left: 91.66666667%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-10 {
+  left: 83.33333333%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-9 {
+  left: 75%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-8 {
+  left: 66.66666667%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-7 {
+  left: 58.33333333%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-6 {
+  left: 50%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-5 {
+  left: 41.66666667%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-4 {
+  left: 33.33333333%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-3 {
+  left: 25%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-2 {
+  left: 16.66666667%;
+}
+form[name="form"].av-receipt main .row .col-lg-offset-1 {
+  left: 8.33333333%;
+}
+@media (max-width: 400px) {
+  form[name="form"].av-receipt main .row .hide-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 400px) and (max-width: 560px) {
+  form[name="form"].av-receipt main .row .hide-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 560px) and (max-width: 780px) {
+  form[name="form"].av-receipt main .row .hide-md {
+    display: none !important;
+  }
+}
+@media (min-width: 780px) {
+  form[name="form"].av-receipt main .row .hide-lg {
+    display: none !important;
+  }
+}

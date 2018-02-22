@@ -1,0 +1,138 @@
+{
+	"rows": [
+		[
+			{
+				"rows": [
+					[
+						{
+							"properties": {},
+							"subId": "e9752e2587a64983ad4dd0dfb5f92594",
+							"id": "info_block_image_3",
+							"type": "image",
+							"pubId": "17933505332f451ba06998fc7100b715"
+						},
+						{
+							"rows": [
+								[
+									{
+										"subId": "8cb6250cd6774325b09326d9ebad1764",
+										"id": "online_chat_header",
+										"type": "text-display",
+										"pubId": "6397510cb5a14210908037e6f9cdfb8a"
+									}
+								],
+								[
+									{
+										"subId": "ccb28bc3b30f490ba99f9acb9e05aadf",
+										"id": "online_chat_times",
+										"type": "text-display",
+										"pubId": "192a18d04f804f1abb1701419d8a63b2"
+									}
+								],
+								[
+									{
+										"subId": "7ece3fd6b8b0404da40540759c06ab2b",
+										"id": "start_chat",
+										"type": "button",
+										"pubId": "c588979eb41b4859ac24f82d76130076"
+									}
+								]
+							],
+							"subId": "87d8fe8dacbd495b877fca60ecc3500c",
+							"id": "container",
+							"type": "block",
+							"exclude": false,
+							"pubId": "5381c1603d7e47c2bcf9169c9bc23598"
+						}
+					]
+				],
+				"subId": "0fc00e13886f4ee487e471ec71c22c9b",
+				"id": "online_chat_block",
+				"type": "text-input",
+				"exclude": false,
+				"pubId": "95d1e1593c6c4ed89d51fc57f525e1d2"
+			},
+			{
+				"rows": [
+					[
+						{
+							"properties": {},
+							"subId": "72f5c5879e15419496968e710e8a3de3",
+							"id": "info_block_image_4",
+							"type": "image",
+							"pubId": "9d9f643a9e8c4e81955eabdf5cf67b77"
+						},
+						{
+							"rows": [
+								[
+									{
+										"subId": "1f43fb58c48940f88e59d74c7fa9f8b0",
+										"id": "header_8",
+										"type": "text-display",
+										"pubId": "bd9508c6ce7f4baa94d993e2cf6aae0c"
+									}
+								],
+								[
+									{
+										"subId": "083f760faaa543a7b898fea980b255df",
+										"id": "content_3",
+										"type": "text-display",
+										"pubId": "6dffc18fe383485eb2b9b1a83f8f69f2"
+									}
+								],
+								[
+									{
+										"subId": "26b462e7096440458459e2dd732326b8",
+										"id": "form_help_hot_line_link",
+										"type": "link",
+										"pubId": "1f916f69a733430fa5ac836e6d205f49"
+									}
+								]
+							],
+							"subId": "6279c634ea6f4ef7b3234fee83eed660",
+							"id": "container_1",
+							"type": "block",
+							"pubId": "8b79a83214c14798965f6cb4b647289f"
+						}
+					]
+				],
+				"subId": "5614be50ffc749a395d3748f91172519",
+				"id": "call_us_block",
+				"type": "advice-block-info",
+				"pubId": "499308a79bc14dbbbea4f206f553d7db"
+			},
+			{
+				"properties": {},
+				"subId": "15b967cb8b964f5083befb0ff515eba0",
+				"id": "assistant",
+				"type": "image",
+				"pubId": "7ef036dff4f4452fb5a89c22f48e367f"
+			}
+		],
+		[
+			{
+				"rows": [
+					[]
+				],
+				"properties": {
+					"infoText": "<p>You are always welcome to visit us in branch for a face-to-face appointment.</p><p><a href=\"http://www.avoka.com\" target=\"_blank\">Find your nearest branch</a></p>"
+				},
+				"subId": "063ca0b03bc74cc29c9cfa8e00095816",
+				"id": "visit_us",
+				"type": "section-2",
+				"pubId": "53b6f0611b7c41edb7c7ed17ee31634f"
+			}
+		]
+	],
+	"subId": "e2192220d6c44b4ca0f618a507ddf465",
+	"id": "need_assistance",
+	"type": "section-2",
+	"exclude": false,
+	"label": "Need Assistance?",
+	"category": "Custom Components",
+	"blockInfo": {
+		"editLink": "https://maestro.avoka.com.au/maestro/secure/design/13925",
+		"publishLibraryId": 10988,
+		"blockCode": "need-assistance"
+	}
+}

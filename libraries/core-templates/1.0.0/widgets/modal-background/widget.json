@@ -1,0 +1,20 @@
+{
+	"rows": [
+		[]
+	],
+	"type": "block",
+	"id": "modalBackground",
+	"path": "",
+	"exclude": false,
+	"label": "Modal background",
+	"htmlLabel": "Modal background",
+	"styles": [
+		"av-background-image"
+	],
+	"category": "Custom Components",
+	"blockInfo": {
+		"editLink": "https://maestro.avoka.com.au/maestro/secure/design/14254",
+		"publishLibraryId": 10988,
+		"blockCode": "modal-background"
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "label": "BS Vertical Menu background transition",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

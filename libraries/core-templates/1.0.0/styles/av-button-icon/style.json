@@ -1,0 +1,8 @@
+{
+  "label": "AV icon button",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "button"
+  ]
+}

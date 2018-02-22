@@ -1,0 +1,14 @@
+<div class="docking-progress-container" data-ng-controller="DockingProgressBarController"
+     data-ng-if="Form.$Pages.currentPage.$navVisible && !Form.$Pages.currentPage.properties.offMenu && !avReceipt">
+  <div class="av-progress-bar-banner" data-ng-if="Form.$Pages.visiblePageCount > 1">
+  </div>
+  <div class="av-docking-block">
+	<div class="av-progress-bar-container" data-widget-children data-ng-if="Form.$Pages.visiblePageCount > 1">
+	</div>
+	<div class="av-form-heading-container">
+	  <div class="av-form-heading text-display" data-ng-class="Form.$Pages.visiblePageCount > 1 ? '' : 'av-form-heading-single-page'"
+           data-av-compile data-ng-bind-html="'<h1>'+Form.view.label+'</h1>'"></div>
+	</div>
+  </div>
+</div>
+

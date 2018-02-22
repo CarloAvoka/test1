@@ -1,0 +1,8 @@
+{
+  "label": "AV date",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "date-picker"
+  ]
+}

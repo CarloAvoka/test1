@@ -1,0 +1,8 @@
+{
+  "label": "BS Text Align Right",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "button"
+  ]
+}

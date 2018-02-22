@@ -1,0 +1,124 @@
+form[name='form'] {
+
+  input[type="checkbox"]:not(:checked):focus + label i:after {
+    border: none;
+    transform: none;
+    padding: 0px;
+  }
+  
+  .av-checkbox .touch-input {
+    padding-left: 36px;
+  }
+  
+  .av-checkbox {
+    &.has-error {
+	  .av-checkbox {
+	    i {
+		  color: @av-error-color;
+		}
+	  }
+	  .err-msg {
+	    margin-top: 10px;
+      }
+    }  
+	.wdg-button-icon {
+      border: 1px solid #636f71;
+      border-radius: 0px;
+      width: 25px !important;
+      height: 25px !important;
+      position: absolute;
+      top: 6px;
+      margin: 0px !important;
+      margin-top: -9px !important;
+      background-color: #FFFFFF;
+      z-index: 1;
+      overflow: hidden;
+
+      &:before {
+      	content: '';
+      	height: 0px;
+        width: 30px;
+        bottom: -10px;
+        left: -10px;
+        z-index: -2;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        display: block;
+        position: absolute;
+        background-color: @av-primary-color;
+        -moz-transition: width 250ms, height 250ms, background-color 250ms;
+        -o-transition: width 250ms, height 250ms, background-color 250ms;
+        -webkit-transition: width 250ms, height 250ms, background-color 250ms;
+        transition: width 250ms, height 250ms, background-color 250ms;
+      }
+      &:after {
+        content: '';
+        display: block;
+        height: 7px;
+        width: 12px;
+        position: absolute;
+        left: 13px;
+        top: 13px;
+        margin-left: -7px;
+        margin-top: -7px;  
+        border-left: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        transform: rotate(-38deg);
+        z-index: -1;
+      }
+    }
+      
+    .wdg-input {
+    }
+      
+	/* Checked */
+	input:checked + .wdg-input { 
+	  .wdg-button-icon:before {
+        width: 55px;
+        height: 45px;
+        transition: width 250ms, height 250ms, background-color 250ms;
+        .override-color(background, @av-secondary-color, @av-selected-color);
+      } 
+    }
+    
+    /* Hover */
+    input:hover + .wdg-input {  
+      .wdg-button-icon:before {
+        width: 55px;
+        height: 45px;
+        transition: width 250ms, height 250ms, background-color 250ms;
+        .override-color(background, @av-primary-color, @av-focus-color);
+      }
+    }
+    
+    /* Focus */
+    input:focus + .wdg-input {
+      .wdg-button-icon {
+        .override-color(border-color, @av-primary-color, @av-focus-color);
+        &:before {
+          .override-color(background, @av-primary-color, @av-focus-color);
+        }
+      }
+    }
+    input:checked:focus + .wdg-input {
+      .wdg-button-icon{
+      	.override-color(border-color, @av-secondary-color, @av-selected-color);
+        &:before {
+          .override-color(background, @av-secondary-color, @av-selected-color);
+        }
+        &:after {
+          .override-color(border-color, @av-primary-color, @av-focus-color);
+        }
+      }
+    }
+	
+    /* Active */
+	input:active + .wdg-input {
+      .wdg-button-icon {
+        .override-color(border-color, @av-primary-color, @av-selected-color);
+      }
+    }
+  }
+}

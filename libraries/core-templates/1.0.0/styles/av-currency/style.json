@@ -1,0 +1,8 @@
+{
+  "label": "AV currency",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "currency"
+  ]
+}

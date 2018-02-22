@@ -1,0 +1,156 @@
+{
+	"label": "Save Confirm",
+	"rows": [
+		[
+			{
+				"rows": [
+					[
+						{
+							"rules": {
+								"click": "Form.showDialog();"
+							},
+							"subId": "1056a8426290467db5649e4a3e08ea47",
+							"id": "close_9",
+							"type": "icon-button",
+							"pubId": "455d6eb5dfb44e8aa7bb7930597fada5"
+						}
+					]
+				],
+				"subId": "0f48f8fb12ee46c8b5dede2e4658f8a1",
+				"id": "dialogHeader_9",
+				"type": "block",
+				"pubId": "92a58e3bd4c94da895bad4b6f1b10f66"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												{
+													"label": "Save confirm message",
+													"htmlLabel": "Save confirm message",
+													"entityPath": "save_confirm",
+													"exclude": false,
+													"hasCustomId": true,
+													"path": "",
+													"pathContext": "abs",
+													"type": "text-display",
+													"id": "save_confirm_message",
+													"pubId": "4aa53510219745c392c1b2c184aff183"
+												}
+											],
+											[
+												{
+													"label": "Security Question",
+													"rows": [
+														[]
+													],
+													"styles": [
+														"mg-section-2"
+													],
+													"properties": {
+														"infoText": "Please review your security question and answer. This question must be correctly answered to re-open the form."
+													},
+													"entityPath": "security_question_save",
+													"exclude": false,
+													"hasCustomId": true,
+													"htmlLabel": "Security Question",
+													"path": "",
+													"pathContext": "abs",
+													"type": "section-2",
+													"id": "security_question_save_confirm",
+													"pubId": "246e232b0ea94ee29fa591ebe0d93a26"
+												}
+											]
+										],
+										"label": "Save Your Form",
+										"entityPath": "save_your",
+										"hasCustomId": true,
+										"htmlLabel": "Save Your Form",
+										"pathContext": "abs",
+										"subId": "eb8bf3360b1f4a3db69b521b51208ccb",
+										"id": "save_your_form",
+										"type": "section-2",
+										"pubId": "f95da043f0bf4debb102897946a959d8"
+									}
+								]
+							],
+							"label": "Save Confirm Content",
+							"entityPath": "dialog_content_save",
+							"exclude": false,
+							"hasCustomId": true,
+							"htmlLabel": "Save Confirm Content",
+							"path": "",
+							"pathContext": "abs",
+							"subId": "c67d616b1ece48abaeab4eec3f70710c",
+							"id": "dialog_content_save_confirm",
+							"type": "dialog-content",
+							"pubId": "00d88526276f4719ba460d7a9baede85"
+						}
+					],
+					[
+						{
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												{
+													"rules": {
+														"click": "Form.submit({'save':'Saved','abandon':'Abandoned'}[item.$$parent.properties.dialogNavButtons], item.properties.legacyMethod, false, item.$$parent.properties.validationRef);",
+														"sh": "item.$$parent.properties.dialogNavButtons == 'save'"
+													},
+													"subId": "6471b7e4d063409483e51ff9138ed85e",
+													"label": "Save",
+													"exclude": false,
+													"htmlLabel": "Save",
+													"path": "",
+													"id": "okay_18",
+													"type": "button",
+													"pubId": "44dc8c39515844248e6ad70c4e71e2b2"
+												}
+											]
+										],
+										"path": "",
+										"properties": {
+											"dialogNavButtons": "save"
+										},
+										"id": "dialogFooterBlock_12",
+										"type": "block"
+									}
+								]
+							],
+							"path": "",
+							"subId": "50ead585f74e4a198aa3f799c7663b9c",
+							"id": "dialogFooter_18",
+							"type": "block",
+							"pubId": "2cd134f2d6f84810a8770240d8f4acc7"
+						}
+					]
+				],
+				"path": "",
+				"id": "dialogBody_8",
+				"type": "block",
+				"pubId": "1ea05f9f06654a3abe01133ecdc0782d"
+			}
+		]
+	],
+	"type": "dialog",
+	"exclude": false,
+	"hasCustomId": true,
+	"htmlLabel": "Save Confirm",
+	"path": "",
+	"id": "saveconfirm",
+	"category": "Custom Components",
+	"blockInfo": {
+		"editLink": "https://maestro.avoka.com.au/maestro/secure/design/15531",
+		"publishLibraryId": 16680,
+		"blockCode": "save-confirm"
+	}
+}

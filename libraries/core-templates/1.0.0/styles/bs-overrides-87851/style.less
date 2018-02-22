@@ -1,0 +1,99 @@
+@av-max-form-width: 1206px;
+@av-zindex-header: 100;
+@av-error-red: #ff3300;
+/*@av-white-transparent: rgba(255,255,255,0.9);*/
+@av-white-transparent: #ffffff;
+@av-modal-background: #ffffff;
+
+body.av-form{
+	// Horizontal scroll?
+    //overflow-x: hidden;
+}
+ /*STICKING RULES*/
+  .is-sticking .av-tram-nav{
+    @media (max-width:@screen-lg){
+    	padding-left:100px;
+    }
+  }
+
+form[name='form'] .av-sticky-panel .is-sticking {
+  .bs-primary-background-02324{background-color:transparent;}
+  .mg-header{ 
+    //background-color:@av-white-transparent;
+       background: #fff;
+  }
+}
+
+/*FORM ERRORS
+form[name="form"] .err-msg.list-group .list-group-item-danger{
+	transistion: 0.5s all;	
+  	color:@av-error-red!important;
+}
+
+.has-error{
+  .wdg-input{border-color:@av-error-red!important;}
+} */
+
+/* I icon 
+
+form[name="form"] .av-popover-btn{
+  i{display:none;}
+  &:after{
+    	content: "i";
+        position: absolute;
+        top: 1px;
+        left: 7px;
+        font-size: 13px;
+        font-weight: bold;
+        color: @av-primary-color;
+      }
+  &:before{
+      content: " ";
+      background-color: #ffffff;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 2px @av-primary-color solid;
+    }
+  
+  &:hover, &:focus{
+    &:before{background-color:@av-primary-color;}
+    &:after{color:#ffffff;}
+  }
+}
+form[name="form"] .av-popover-help .popover-tooltip{
+	z-index:9!important;
+}
+form[name="form"] .popover-tooltip{
+  .arrow{
+    border-top-color:@av-primary-color!important;
+    bottom:-13px!important
+  }
+  .content{
+  	border:2px @av-primary-color solid!important;
+    box-shadow:none!important;
+  }
+} */
+
+/* Sticky Panel */
+
+
+
+
+/*REMOVING TOP PADDING IN MOBILE*/
+@media (max-width:@screen-md){
+  form[name="form"]{
+  padding-top:0!important;
+  }
+}
+form[name='form'] {
+
+	.bs-overrides-87851 {
+		
+
+
+	}
+}

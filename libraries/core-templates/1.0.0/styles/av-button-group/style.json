@@ -1,0 +1,33 @@
+{
+  "label": "Button Group",
+  "block": {
+    "decs": {},
+    "blocks": {
+      "wdg-input": {
+        "decs": {
+          "padding-left": "25px",
+          "padding-right": "25px",
+          "padding-top": "10px",
+          "padding-bottom": "10px",
+          "border-style": "solid",
+          "border-bottom-width": "1px",
+          "border-color": "#DDDDDD",
+          "border-top-width": "0px",
+          "border-left-width": "0px",
+          "border-right-width": "0px",
+          "@background": "#f1f1f1 , 100",
+          "text-align": "center"
+        },
+        "blocks": {}
+      },
+      "wdg-input-container": {
+        "decs": {
+          "padding-right": "2px",
+          "padding-bottom": "2px"
+        },
+        "blocks": {}
+      }
+    }
+  },
+  "file": "style.less"
+}

@@ -1,0 +1,8 @@
+{
+  "label": "BS header",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "sticky-panel"
+  ]
+}

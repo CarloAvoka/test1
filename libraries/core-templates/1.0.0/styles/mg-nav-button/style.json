@@ -1,0 +1,18 @@
+{
+  "label": "Maguire Navigation Button",
+  "block": {
+    "decs": {
+      "padding-bottom": "0px",
+      "padding-right": "0px",
+      "padding-left": "0px",
+      "padding-top": "0px"
+    },
+    "blocks": {
+      "wdg-button": {
+        "decs": {},
+        "blocks": {}
+      }
+    }
+  },
+  "file": "style.less"
+}

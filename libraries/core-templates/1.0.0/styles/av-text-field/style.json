@@ -1,0 +1,11 @@
+{
+  "label": "AV text field",
+  "block": {
+    "decs": {},
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "text-input"
+  ]
+}

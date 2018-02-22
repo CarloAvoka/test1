@@ -1,0 +1,16 @@
+{
+  "label": "BS test image",
+  "block": {
+    "decs": {},
+    "blocks": {
+      "wdg-image": {
+        "decs": {},
+        "blocks": {}
+      }
+    }
+  },
+  "file": "style.less",
+  "widgets": [
+    "image"
+  ]
+}

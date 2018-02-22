@@ -1,0 +1,8 @@
+{
+  "label": "BS Dialog link button",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "button"
+  ]
+}

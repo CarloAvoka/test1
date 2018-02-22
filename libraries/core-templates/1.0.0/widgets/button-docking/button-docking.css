@@ -1,0 +1,17 @@
+form[name='form'] .btn-docking {	
+    position:fixed;
+    transform: translate(-50%, -50%);
+    transition: left 0.5s ease, right 0.5s ease;
+}
+form[name='form'] .btn-docking .wdg-button {
+	width: 100%;
+    height: 100%;
+}
+form[name='form'] .btn-docking .wdg-button-label {
+	display: block;
+}
+@media only screen and (max-width: 1280px) {
+  form[name='form'] .btn-docking .wdg-button-label {
+  	 display:none;
+  }
+}

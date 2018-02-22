@@ -1,0 +1,14 @@
+form[name='form'] {
+  .bs-fade-transition-50987 {    
+    &.ng-enter, &.ng-leave.ng-leave-active {
+      .transition(0.8s all ease-in-out 0.3s);
+      opacity:0;
+      transform: translate(100%,100%);
+    }
+    &.ng-leave, &.ng-enter.ng-enter-active {
+      .transition(0.8s all ease-in-out);
+      opacity:0.9;
+      transform: translate(50%,50%);
+    }    
+  }
+}

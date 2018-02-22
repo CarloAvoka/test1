@@ -1,0 +1,8 @@
+{
+  "label": "BS Currency Field",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "currency"
+  ]
+}

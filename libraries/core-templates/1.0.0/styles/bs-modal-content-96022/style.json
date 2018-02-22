@@ -1,0 +1,8 @@
+{
+  "label": "BS modal content",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "section-2"
+  ]
+}

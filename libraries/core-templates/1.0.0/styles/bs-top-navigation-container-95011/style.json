@@ -1,0 +1,8 @@
+{
+  "label": "BS Top Navigation Container",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

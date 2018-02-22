@@ -1,0 +1,124 @@
+{
+	"label": "Show XML",
+	"rows": [
+		[
+			{
+				"rows": [
+					[
+						{
+							"rules": {
+								"click": "Form.showDialog();"
+							},
+							"subId": "1056a8426290467db5649e4a3e08ea47",
+							"id": "close",
+							"type": "icon-button",
+							"pubId": "dbfbfa08cfd0446da064233de0d20684"
+						}
+					]
+				],
+				"subId": "0f48f8fb12ee46c8b5dede2e4658f8a1",
+				"id": "dialogHeader_1",
+				"type": "block",
+				"pubId": "5afbc9d2c55d491686da20cbd937af4a"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												{
+													"label": "",
+													"htmlLabel": "{{Form.getDataXml(true)}}",
+													"entityPath": "xml",
+													"exclude": false,
+													"hasCustomId": true,
+													"path": "",
+													"pathContext": "abs",
+													"type": "text-display",
+													"id": "xml_display",
+													"pubId": "850a7f56abfa40d3a4167e74e6b576a1"
+												}
+											]
+										],
+										"label": "Show XML Content",
+										"entityPath": "show_xml",
+										"hasCustomId": true,
+										"htmlLabel": "Show XML Content",
+										"pathContext": "abs",
+										"subId": "eb8bf3360b1f4a3db69b521b51208ccb",
+										"id": "show_xml_content",
+										"type": "section-2",
+										"pubId": "79e5d5cac3914789865650272a1b8f0e"
+									}
+								]
+							],
+							"path": "",
+							"subId": "c67d616b1ece48abaeab4eec3f70710c",
+							"id": "dialogContent_3",
+							"type": "dialog-content",
+							"pubId": "c0303162902c41669857d1f7683dca48"
+						}
+					],
+					[
+						{
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												{
+													"rules": {
+														"click": "Form.showDialog(\"\");",
+														"sh": ""
+													},
+													"subId": "6471b7e4d063409483e51ff9138ed85e",
+													"path": "",
+													"id": "okay_8",
+													"type": "button",
+													"pubId": "59aead05e87845a9acdbf2b2946a5169"
+												}
+											]
+										],
+										"path": "",
+										"subId": "5e49ce4ad21c4dbb96b865b096c67eea",
+										"id": "dialogFooterBlock_2",
+										"type": "block",
+										"pubId": "9cd0823d0cd341cb86bf35e712f4b5d3"
+									}
+								]
+							],
+							"exclude": true,
+							"path": "",
+							"subId": "50ead585f74e4a198aa3f799c7663b9c",
+							"id": "dialogFooter_8",
+							"type": "block",
+							"pubId": "b185f47ec7c042c3a9dbcfdde93052cf"
+						}
+					]
+				],
+				"path": "",
+				"id": "dialogBody_7",
+				"type": "block",
+				"pubId": "f220c8df9c284490b3f507a489e0fe4a"
+			}
+		]
+	],
+	"type": "dialog",
+	"exclude": false,
+	"hasCustomId": true,
+	"htmlLabel": "Show XML",
+	"path": "",
+	"id": "showxml",
+	"category": "Custom Components",
+	"blockInfo": {
+		"editLink": "https://maestro.avoka.com.au/maestro/secure/design/15533",
+		"publishLibraryId": 16680,
+		"blockCode": "show-xml"
+	}
+}

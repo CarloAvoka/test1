@@ -1,0 +1,8 @@
+{
+  "label": "BS functional vertical menu",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "label": "Maguire",
+  "file": "maguire.less",
+  "receiptFile": "maguire-receipt.less",
+  "styleVars": [
+    {
+      "name": "av-section-1-header-color",
+      "type": "color",
+      "label": "Section Level 1 Title Color",
+      "defaultValue": "#202B34"
+    },
+    {
+      "name": "av-section-1-title-font-size",
+      "type": "px",
+      "label": "Section Level 1 Title Font Size",
+      "defaultValue": "30px"
+    },
+    {
+      "name": "av-section-2-header-color",
+      "type": "color",
+      "label": "Section Level 2 Title Color",
+      "defaultValue": "#202B34"
+    },
+    {
+      "name": "av-section-2-title-font-size",
+      "type": "px",
+      "label": "Section Level 2 Title Font Size",
+      "defaultValue": "21px"
+    },
+    {
+      "name": "av-max-form-width",
+      "type": "px",
+      "label": "Max Form Width",
+      "defaultValue": "1020px"
+    },
+    {
+      "name": "av-menu-font-size",
+      "type": "px",
+      "label": "Menu Font Size",
+      "defaultValue": "13px",
+      "category": "Menu"
+    },
+    {
+      "name": "av-menu-height",
+      "type": "px",
+      "label": "Menu Height",
+      "defaultValue": "57px",
+      "category": "Menu"
+    },
+    {
+      "name": "av-menu-text-color",
+      "type": "color",
+      "label": "Menu Text Color",
+      "defaultValue": "",
+      "category": "Menu"
+    },
+    {
+      "name": "av-menu-text-hover-color",
+      "type": "color",
+      "label": "Menu Text Color (Hover)",
+      "defaultValue": "",
+      "category": "Menu"
+    },
+    {
+      "name": "av-menu-active-text-color",
+      "type": "color",
+      "label": "Menu Text Color (Active)",
+      "defaultValue": "",
+      "category": "Menu"
+    },
+    {
+      "name": "av-menu-color",
+      "type": "color",
+      "label": "Menu Background Color",
+      "defaultValue": "",
+      "category": "Menu"
+    },
+    {
+      "name": "av-menu-color-active",
+      "type": "color",
+      "label": "Menu Background Color (Active)",
+      "defaultValue": "",
+      "category": "Menu"
+    },
+    {
+      "name": "av-menu-hover-color",
+      "type": "color",
+      "label": "Menu Background Color (Hover)",
+      "defaultValue": "",
+      "category": "Menu"
+    },
+    {
+      "name": "av-sub-menu-text-color",
+      "type": "color",
+      "label": "Sub Menu Text Color",
+      "defaultValue": "#005280",
+      "category": "Menu"
+    },
+    {
+      "name": "av-sub-menu-text-hover-color",
+      "type": "color",
+      "label": "Sub Menu Text Color (Hover)",
+      "defaultValue": "#005280",
+      "category": "Menu"
+    },
+    {
+      "name": "av-sub-menu-active-text-color",
+      "type": "color",
+      "label": "Sub Menu Text Color (Active)",
+      "defaultValue": "#005280",
+      "category": "Menu"
+    },
+    {
+      "name": "av-sub-menu-background-color",
+      "type": "color",
+      "label": "Sub Menu Background Color",
+      "defaultValue": "#FFFFFF",
+      "category": "Menu"
+    },
+    {
+      "name": "av-sub-menu-active-background-color",
+      "type": "color",
+      "label": "Sub Menu Background Color (Active)",
+      "defaultValue": "#FFFFFF",
+      "category": "Menu"
+    },
+    {
+      "name": "av-sub-menu-background-hover-color",
+      "type": "color",
+      "label": "Sub Menu Background Color (Hover)",
+      "defaultValue": "#EEEEEE",
+      "category": "Menu"
+    },
+    {
+      "name": "av-slide-menu-color",
+      "type": "color",
+      "label": "Menu Mobile Background Color",
+      "defaultValue": "#005280",
+      "category": "Mobile Menu"
+    },
+    {
+      "name": "av-slide-menu-item-color",
+      "type": "color",
+      "label": "Menu Item Background Color",
+      "defaultValue": "",
+      "category": "Mobile Menu"
+    },
+    {
+      "name": "av-slide-menu-item-active-color",
+      "type": "color",
+      "label": "Menu Item Background Color (Active)",
+      "defaultValue": "",
+      "category": "Mobile Menu"
+    },
+    {
+      "name": "av-slide-menu-item-hover-color",
+      "type": "color",
+      "label": "Menu Item Background Color (Hover)",
+      "defaultValue": "",
+      "category": "Mobile Menu"
+    },
+    {
+      "name": "av-slide-menu-item-text-color",
+      "type": "color",
+      "label": "Menu Item Text Color",
+      "defaultValue": "",
+      "category": "Mobile Menu"
+    },
+    {
+      "name": "av-slide-menu-item-text-active-color",
+      "type": "color",
+      "label": "Menu Item Text Color (Active)",
+      "defaultValue": "",
+      "category": "Mobile Menu"
+    },
+    {
+      "name": "av-slide-menu-item-text-hover-color",
+      "type": "color",
+      "label": "Menu Item Text Color (Hover)",
+      "defaultValue": "",
+      "category": "Mobile Menu"
+    },
+    {
+      "name": "av-slide-menu-item-pointer-color",
+      "type": "color",
+      "label": "Menu Item Pointer Color",
+      "defaultValue": "#f39900",
+      "category": "Mobile Menu"
+    },
+    {
+      "name": "av-slide-menu-item-pointer-active-color",
+      "type": "color",
+      "label": "Menu Item Pointer Color (Active)",
+      "defaultValue": "#f39900",
+      "category": "Mobile Menu"
+    },
+    {
+      "name": "av-slide-menu-item-pointer-hover-color",
+      "type": "color",
+      "label": "Menu Item Pointer Color (Hover)",
+      "defaultValue": "#f39900",
+      "category": "Mobile Menu"
+    },
+    {
+      "name": "av-slide-menu-extra-item-color",
+      "type": "color",
+      "label": "Menu Extra Item Background Color",
+      "defaultValue": "",
+      "category": "Mobile Menu - Extra Items"
+    },
+    {
+      "name": "av-slide-menu-extra-item-active-color",
+      "type": "color",
+      "label": "Menu Extra Item Background Color (Active)",
+      "defaultValue": "",
+      "category": "Mobile Menu - Extra Items"
+    },
+    {
+      "name": "av-slide-menu-extra-item-hover-color",
+      "type": "color",
+      "label": "Menu Extra Item Background Color (Hover)",
+      "defaultValue": "",
+      "category": "Mobile Menu - Extra Items"
+    },
+    {
+      "name": "av-slide-menu-extra-item-text-color",
+      "type": "color",
+      "label": "Menu Extra Item Text Color",
+      "defaultValue": "",
+      "category": "Mobile Menu - Extra Items"
+    },
+    {
+      "name": "av-slide-menu-extra-item-text-active-color",
+      "type": "color",
+      "label": "Menu Extra Item Text Color (Active)",
+      "defaultValue": "",
+      "category": "Mobile Menu - Extra Items"
+    },
+    {
+      "name": "av-slide-menu-extra-item-text-hover-color",
+      "type": "color",
+      "label": "Menu Extra Item Text Color (Hover)",
+      "defaultValue": "",
+      "category": "Mobile Menu - Extra Items"
+    },
+    {
+      "name": "av-slide-menu-extra-item-pointer-color",
+      "type": "color",
+      "label": "Menu Extra Item Pointer Color",
+      "defaultValue": "",
+      "category": "Mobile Menu - Extra Items"
+    },
+    {
+      "name": "av-slide-menu-extra-item-pointer-active-color",
+      "type": "color",
+      "label": "Menu Extra Item Pointer Color (Active)",
+      "defaultValue": "",
+      "category": "Mobile Menu - Extra Items"
+    },
+    {
+      "name": "av-slide-menu-extra-item-pointer-hover-color",
+      "type": "color",
+      "label": "Menu Extra Item Pointer Color (Hover)",
+      "defaultValue": "",
+      "category": "Mobile Menu - Extra Items"
+    },
+    {
+      "name": "av-menu-visited-color",
+      "type": "color",
+      "label": "Visited Menu Rail Color"
+    }
+  ]
+}

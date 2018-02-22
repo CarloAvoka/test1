@@ -1,0 +1,69 @@
+form[name='form'] {
+    .err-msg.list-group {
+     .fa:before {
+        content:"\f12a";
+      } .list-group-item-danger {
+          color: #ed5752;
+      }
+    }
+  
+  .av-menu-errors {
+    font-size: 13px;
+    
+    .av-item-container  {
+      width: 80%
+    }
+
+    h3 {
+      //font-family: QuicksandLight !important;
+      margin-top: 4px;
+    }
+
+    .av-menu-errors-guide {
+      color: #fff;
+      padding: 4px 0 11px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .av-menu-errors-small {
+    position: fixed;
+    top: -65px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: #ed5752;
+    color: #FFF;
+    font-size: 13px;
+    z-index: 88;
+    padding: 14px 10px 10px;
+    .transition(all 0.5s ease);
+
+    &.av-menu-errors-visible {
+      display: block;
+      top: 110px;
+    }
+
+    h3 {
+      font-family: QuicksandLight !important;
+      font-size: 16px;
+      margin: 0 0 3px 0;
+    }
+
+    .av-menu-errors-small-icon {
+      position: absolute;
+      top: 17px;
+      right: 9px;
+      height: 24px;
+      width: 23px;
+      border-radius: 15px;
+      border: solid 2px #FFF;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "label": "AV navigation button",
+  "file": "style.less",
+  "widgets": [
+    "av-button-navigation"
+  ]
+}

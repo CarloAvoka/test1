@@ -1,0 +1,13 @@
+{
+  "label": "BS save dialog text",
+  "block": {
+    "decs": {
+      "color": "#fff"
+    },
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "section-2"
+  ]
+}

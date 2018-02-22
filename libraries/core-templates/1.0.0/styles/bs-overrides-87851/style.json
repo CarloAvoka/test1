@@ -1,0 +1,8 @@
+{
+  "label": "BS overrides",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "form"
+  ]
+}

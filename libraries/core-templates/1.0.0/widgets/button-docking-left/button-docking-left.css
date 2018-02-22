@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1280px) {
+  form[name='form'] div.btn-docking.btn-docking-left {
+    left: 0;
+  }
+  form[name='form'] .btn-docking.btn-docking-left .wdg-button {
+    padding-left: 50%;
+    padding-right: 0;
+  }
+}

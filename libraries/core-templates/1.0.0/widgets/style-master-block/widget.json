@@ -1,0 +1,597 @@
+{
+	"rows": [
+		[
+			{
+				"label": "Personal Details",
+				"rows": [
+					[
+						{
+							"span": {
+								"md": 3,
+								"lg": 3
+							},
+							"label": "First name",
+							"properties": {
+								"helpText": ""
+							},
+							"type": "text-input",
+							"path": "FirstName",
+							"mandatory": true,
+							"htmlLabel": "First name",
+							"id": "firstName2",
+							"pubId": "6aa417b9582d40969acb60350725a52d"
+						},
+						{
+							"span": {
+								"md": 3,
+								"lg": 3
+							},
+							"label": "Middle name (optional)",
+							"properties": {
+								"helpText": ""
+							},
+							"type": "text-input",
+							"path": "MiddleNameOptional",
+							"mandatory": false,
+							"htmlLabel": "Middle name (optional)",
+							"id": "middleNameOptional",
+							"pubId": "df57af35e318476cb223b379c1a5e01a"
+						},
+						{
+							"span": {
+								"md": 3,
+								"lg": 3
+							},
+							"label": "Last name",
+							"properties": {
+								"helpText": ""
+							},
+							"type": "text-input",
+							"path": "LastName",
+							"mandatory": true,
+							"htmlLabel": "Last name",
+							"id": "lastName1",
+							"pubId": "0382c8ac5f9844c4aeaf827a4780d248"
+						}
+					],
+					[
+						{
+							"span": {
+								"md": 4,
+								"lg": 4
+							},
+							"label": "Country",
+							"properties": {},
+							"type": "dropdown",
+							"path": "Country",
+							"htmlLabel": "Country",
+							"id": "country",
+							"pubId": "2bd1d8e014264f38a82f66a931f57b9f"
+						}
+					],
+					[
+						{
+							"rows": [
+								[
+									{
+										"styles": [
+											"av-global-layout",
+											"av-drop-down"
+										],
+										"properties": {
+											"dataPath": "data.daysData"
+										},
+										"rules": {
+											"change": "if(Util.isBlank(data.day) || Util.isBlank(data.month) || Util.isBlank(data.year)) {\n\tdata.date = \"\";\n    return;\n}\n\nvar day = data.day && data.day.length == 1 ? \"0\"+data.day : data.day;\n\ndata.date = [data.year, data.month, day].join(\"-\")",
+											"eq": "var day = !Util.isBlank(data.date) && data.date.split(\"-\")[2]; \n return day && typeof day === \"string\" ? day.replace(/^[0]/,\"\") : value;"
+										},
+										"subId": "76db24a0bad5481d9368da9764fdc8c8",
+										"id": "day",
+										"type": "data-dropdown",
+										"pubId": "76182bfd13724884b4288cd928247150"
+									},
+									{
+										"properties": {},
+										"rules": {
+											"change": "if(Util.isBlank(data.day) || Util.isBlank(data.month) || Util.isBlank(data.year)) {\n\tdata.date = \"\";\n    return;\n}\n\nvar day = data.day && data.day.length == 1 ? \"0\"+data.day : data.day;\n\ndata.date = [data.year, data.month, day].join(\"-\")",
+											"eq": "return !Util.isBlank(data.date) ? data.date.split(\"-\")[1] : value;"
+										},
+										"subId": "de2b5988028e4696b427a6e9c38591a5",
+										"id": "month",
+										"type": "dropdown",
+										"pubId": "d08f3ac71df4450094742607de9e92f4"
+									},
+									{
+										"styles": [
+											"av-global-layout",
+											"av-drop-down"
+										],
+										"rules": {
+											"change": "if(Util.isBlank(data.day) || Util.isBlank(data.month) || Util.isBlank(data.year)) {\n\tdata.date = \"\";\n    return;\n}\n\nvar day = data.day && data.day.length == 1 ? \"0\"+data.day : data.day;\n\ndata.date = [data.year, data.month, day].join(\"-\")",
+											"eq": "return !Util.isBlank(data.date) ? data.date.split(\"-\")[0] : value;"
+										},
+										"subId": "048766c81195486282fe15facde10bf2",
+										"id": "year",
+										"type": "dropdown-years",
+										"pubId": "4d099b1664374469a28d935e5f39fe25"
+									}
+								],
+								[
+									{
+										"noData": "",
+										"rules": {
+											"eq": "// Since we cannot remove this cal rule, return self value\nvalue"
+										},
+										"subId": "6098420a3dac4dcf920493cc2d8d1a5e",
+										"id": "date",
+										"type": "data-field",
+										"pubId": "fb68b0fdefc64e8192c84c1aacf492dc"
+									}
+								],
+								[
+									{
+										"rules": {
+											"eq": "var month = !Util.isBlank(data.date) ? data.date.split(\"-\")[1] : \"\",\n\tday = data.day,\n    range,\n    selectionArr,\n    max = 31;\n\nif (month == \"02\") max = Util.isLeapYear(data.year) ? 29 : 28;\n\nelse if(Util.contains([\"04\",\"06\",\"09\",\"11\"],month)) max = 30;\n\nif(+day > max) data.day = max.toString();\n\nrange = Util.range(1, max).map(function(day){\n  return day.toString(); \n});\n\n// Convert to comma delimited and then convert to delimited selection array\nreturn Calc.delimitedSelection(range.join(\",\"));"
+										},
+										"subId": "d635fabae84c44e699d001afddabad9d",
+										"id": "daysData",
+										"type": "data-field",
+										"pubId": "53b69d508a60404db8b3ef75b4aa4556"
+									}
+								]
+							],
+							"rules": {
+								"ok": "if(Util.isBlank(data.date) || (!item.properties.minAge && !item.properties.maxAge && !item.properties.pastDate)) {\n  return true;\n}\nvar currentTime = new Date().getTime(),\n    minAge = item.properties.minAge,\n    maxAge = item.properties.maxAge,\n    pastDate = item.properties.pastDate,\n    dobDate = Calc.date(data.date);\n\nif(pastDate && Calc.daysBetween(dobDate, new Date()) < 0) {\n    return \"Must be a date in the past\";\n}\n\nif(!Util.isBlank(minAge)) {\n\tdobDate.setFullYear(dobDate.getFullYear()+minAge);\n\tif (currentTime <= dobDate.getTime()) {\n\t\treturn \"You must be at least \"+minAge+\" years old\";\n\t}\n}\n\nif(!Util.isBlank(maxAge)) {\n\tdobDate.setFullYear(dobDate.getFullYear()+maxAge);\n\tif (currentTime >= dobDate.getTime()) {\n\t\treturn \"You must be under \"+maxAge+\" years old\";\n\t}\n}\n\nreturn true;"
+							},
+							"type": "dropdown-dob-block",
+							"path": "DateOfBirthDropdown",
+							"id": "dateOfBirthDropdown",
+							"pubId": "eb2a794cd58c42af94471c18973dc8aa"
+						}
+					]
+				],
+				"properties": {
+					"topToBottom": true
+				},
+				"type": "section-2",
+				"path": "",
+				"htmlLabel": "Personal Details",
+				"id": "personalDetails",
+				"pubId": "18bbf754f32a4d6e96b7eca3e68f4e86"
+			}
+		],
+		[
+			{
+				"label": "Other Details",
+				"rows": [
+					[
+						{
+							"type": "email",
+							"rules": {
+								"ok": "/^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?/.test(value) || 'Enter a valid email address e.g. name@example.com'"
+							},
+							"path": "EmailAddress",
+							"id": "emailAddress2",
+							"pubId": "82537d43d5a541c78ae556a6a5f33098"
+						}
+					],
+					[
+						{
+							"type": "date-picker",
+							"path": "DatePicker",
+							"id": "datePicker",
+							"pubId": "9be4a2834e44441e818c98083d7c94d6"
+						}
+					],
+					[
+						{
+							"type": "currency",
+							"path": "CurrencyField",
+							"id": "currencyField",
+							"pubId": "3d4acf7191404c30a5619f5a4d4f5c2f"
+						}
+					],
+					[
+						{
+							"styles": [
+								"av-global-layout",
+								"av-text-field"
+							],
+							"type": "decimal",
+							"path": "DecimalField",
+							"id": "decimalField",
+							"pubId": "1e7af05e0367400587f197c82eb6ce92"
+						}
+					],
+					[
+						{
+							"type": "email",
+							"rules": {
+								"ok": "/^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?/.test(value) || 'Enter a valid email address e.g. name@example.com'"
+							},
+							"path": "EmailAddress",
+							"id": "emailAddress",
+							"pubId": "d591a940ed7d4260b99e8adb7a67a47e"
+						}
+					],
+					[
+						{
+							"properties": {},
+							"type": "radio-button-group",
+							"path": "RadioButtonGroup",
+							"id": "radioButtonGroup",
+							"pubId": "16d7bc4912da4460a374f51a484d9228"
+						}
+					],
+					[
+						{
+							"styles": [
+								"av-global-layout",
+								"bs-checkbox-04598"
+							],
+							"properties": {
+								"unselectedIconClass": "",
+								"selectedIconClass": ""
+							},
+							"type": "checkbox",
+							"path": "Checkbox",
+							"id": "checkbox",
+							"pubId": "98ba81dcb4cb47e8a63ee89ee04412a6"
+						}
+					]
+				],
+				"properties": {
+					"topToBottom": true
+				},
+				"type": "section-2",
+				"path": "",
+				"htmlLabel": "Other Details",
+				"id": "otherDetails",
+				"pubId": "0c6f9a0f209a4dfdadab56f9127b97e5"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"span": {
+								"md": 4,
+								"lg": 4
+							},
+							"rows": [
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Left Link Button",
+										"styles": [
+											"av-global-layout",
+											"av-button-link"
+										],
+										"properties": {
+											"icon": "fa fa-angle-left"
+										},
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Left Link Button",
+										"id": "leftLinkButton",
+										"pubId": "f68f5692046d4f028d4569b7ce2d17df"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Primary Small",
+										"styles": [
+											"av-button-primary",
+											"bs-small-button-25462",
+											"av-global-layout"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Primary Small",
+										"exclude": true,
+										"id": "primarySmall3",
+										"pubId": "1797ebe5044f4dd4ba71c19e2ddf5442"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Primary Small",
+										"styles": [
+											"av-global-layout",
+											"av-button-primary",
+											"bs-small-button-25462"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Primary Small",
+										"exclude": true,
+										"id": "primarySmall2",
+										"pubId": "682349e8c23f410a98982bff55d9a7af"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Primary",
+										"styles": [
+											"av-global-layout",
+											"av-button-primary"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Primary",
+										"exclude": true,
+										"id": "primary2",
+										"pubId": "ae570d801c55486bb3b00e882df5a948"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Primary",
+										"styles": [
+											"av-global-layout",
+											"av-button-primary",
+											"av-button"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Primary",
+										"id": "primary",
+										"pubId": "7d8c074047df4e37a0ab3b537b696e1a"
+									}
+								]
+							],
+							"type": "block",
+							"path": "",
+							"id": "block",
+							"pubId": "c245e3914ce44d36a8dab5fa4c067db9"
+						},
+						{
+							"span": {
+								"md": 4,
+								"lg": 4
+							},
+							"rows": [
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Secondary",
+										"styles": [
+											"av-global-layout",
+											"av-button-secondary",
+											"bs-small-button-25462"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Secondary",
+										"exclude": true,
+										"id": "secondary7",
+										"pubId": "6275f07e5ecb47dbb955679156197df7"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Secondary",
+										"styles": [
+											"av-global-layout",
+											"av-button-secondary",
+											"bs-small-button-25462"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Secondary",
+										"exclude": true,
+										"id": "secondary6",
+										"pubId": "f724bde317d64b2fb927c1620164d50e"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Secondary",
+										"styles": [
+											"av-global-layout",
+											"av-button-secondary"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Secondary",
+										"exclude": true,
+										"id": "secondary4",
+										"pubId": "9646615088ce475d849dc324140f4ae3"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Secondary",
+										"styles": [
+											"av-global-layout",
+											"av-button-secondary",
+											"av-button"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Secondary",
+										"id": "secondary5",
+										"pubId": "a2068a5825ba48f18e58ab506d7a00dc"
+									}
+								]
+							],
+							"type": "block",
+							"path": "",
+							"id": "block1",
+							"pubId": "bf0b1ea6ed8f42debcae7e3ae27e9a13"
+						},
+						{
+							"span": {
+								"md": 4,
+								"lg": 4
+							},
+							"rows": [
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Right Link Button",
+										"styles": [
+											"av-global-layout",
+											"av-button-link"
+										],
+										"properties": {
+											"icon": "fa fa-angle-right",
+											"iconPos": "right"
+										},
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Right Link Button",
+										"id": "rightLinkButton1",
+										"pubId": "ff1871ad44dc436189332e0a8f4b23d6"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Tertiary",
+										"styles": [
+											"av-global-layout",
+											"bs-tertiary-button-29051",
+											"bs-small-button-25462"
+										],
+										"properties": {
+											"iconPos": "right"
+										},
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Tertiary",
+										"exclude": true,
+										"id": "tertiary7",
+										"pubId": "e79ba2d359074c6cac0d0d36dbb60bdb"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Tertiary",
+										"styles": [
+											"av-global-layout",
+											"bs-tertiary-button-29051",
+											"bs-small-button-25462"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Tertiary",
+										"exclude": true,
+										"id": "tertiary6",
+										"pubId": "23c01cbc4fb64d33beaf0a2dee6addf5"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Tertiary",
+										"styles": [
+											"av-global-layout",
+											"bs-tertiary-button-29051"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Tertiary",
+										"exclude": true,
+										"id": "tertiary5",
+										"pubId": "d03f424680414e3f96dce44bc39988a7"
+									}
+								],
+								[
+									{
+										"span": {
+											"md": 12,
+											"lg": 12
+										},
+										"label": "Tertiary",
+										"styles": [
+											"av-global-layout",
+											"bs-tertiary-button-29051",
+											"av-button"
+										],
+										"type": "button",
+										"path": "",
+										"htmlLabel": "Tertiary",
+										"id": "tertiary4",
+										"pubId": "6096879ca2d44ece859e4e47e89d6f4e"
+									}
+								]
+							],
+							"type": "block",
+							"path": "",
+							"id": "block2",
+							"pubId": "2ce4a1382d7a48d3bbc0e1be7192e9b4"
+						}
+					]
+				],
+				"properties": {
+					"topToBottom": true
+				},
+				"type": "section-2",
+				"path": "",
+				"id": "buttons",
+				"label": "Buttons",
+				"htmlLabel": "Buttons",
+				"pubId": "536df813050644f883b4f0e00cdb1a0f"
+			}
+		]
+	],
+	"type": "block",
+	"id": "block3",
+	"path": "",
+	"label": "Style Master Block",
+	"category": "Custom Components",
+	"blockInfo": {
+		"editLink": "https://tm.maestro.avoka.com/maestro-50/secure/design/6353",
+		"publishLibraryId": 5704,
+		"blockCode": "style-master-block"
+	}
+}

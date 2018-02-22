@@ -1,0 +1,8 @@
+{
+  "label": "BS assistant image",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "image"
+  ]
+}

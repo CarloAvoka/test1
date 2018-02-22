@@ -1,0 +1,37 @@
+{
+	"category": "Buttons",
+    "label": "Button",
+    "html": "button.html",
+    "icon": "button.png",
+	"css": "button.css",
+    "propDefs": {
+        "icon": {
+            "label": "Icon",
+            "type": "icon",
+            "imageStyleTarget": "Button icon",
+            "value": "",
+            "helpText": "Select the button icon"
+        },
+        "iconPos": {
+            "label": "Icon Position",
+            "type": "option",
+            "value": "left",
+            "options" : [{"label":"Left","value":"left"},{"label":"Right","value":"right"}],
+            "helpText": "Select the button icon position"
+        },
+        "ariaLabel": {
+            "label": "Aria Label",
+            "type": "text",
+            "value": "",
+            "category" : "Accessibility",
+            "helpText": "Enter the Aria Label for this button"
+        }
+    },
+    "defaultStyleTarget": "wdg-button",
+    "span": {"xs": 12, "sm": 12, "md": 4, "lg": 4},
+    "noData": true,
+    "styles": [
+		"av-global-layout",
+		"av-button"
+	]
+}

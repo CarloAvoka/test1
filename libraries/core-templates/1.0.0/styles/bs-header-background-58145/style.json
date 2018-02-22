@@ -1,0 +1,11 @@
+{
+  "label": "BS header background",
+  "block": {
+    "decs": {},
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

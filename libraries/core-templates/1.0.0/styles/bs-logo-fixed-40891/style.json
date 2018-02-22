@@ -1,0 +1,8 @@
+{
+  "label": "BS Logo Fixed",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "image"
+  ]
+}

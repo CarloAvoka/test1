@@ -1,0 +1,8 @@
+{
+  "label": "BS Fade Transition",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

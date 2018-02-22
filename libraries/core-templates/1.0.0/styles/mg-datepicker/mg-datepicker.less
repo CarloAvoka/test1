@@ -1,0 +1,49 @@
+@import (reference) "../mg-base/maguire";
+@primary-picker-color: #016D94;
+form[name="form"] {
+  .mg-datepicker {
+    
+    
+    .picker-container {
+       box-shadow: none;
+       border-radius: 0px;
+    }
+
+    .time-date {
+      .wdg-picker-title {
+        background-color: #004963;
+        color: #FFFFFF;
+      }
+      .display {
+        .wdg-picker-content {
+          background-color: #fff;
+          color: black;
+        }
+      }
+      .control {
+        > .slider {
+          > .date-control {
+            > .days {
+              .day-cell {
+                color: #202020;
+                &.today {
+                  color: @primary-picker-color;
+                }
+                &.selected {
+                  color: #FFFFFF;
+                  background-color: @primary-picker-color;
+                }
+                &:hover,
+                &:active {
+                  color: #FFFFFF;
+                  background-color: #028EC1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

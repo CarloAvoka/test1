@@ -1,0 +1,11 @@
+{
+	"block": {
+		"blocks": {},
+		"decs": {}
+	},
+	"file": "style.less",
+	"label": "BS Top Navigation Bar",
+	"widgets": [
+		"block"
+	]
+}

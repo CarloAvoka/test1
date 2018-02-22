@@ -1,0 +1,8 @@
+{
+  "label": "BS logo container",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

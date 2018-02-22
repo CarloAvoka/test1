@@ -1,0 +1,11 @@
+{
+	"label": "Docking button right",
+	"category": "Buttons",
+	"type": "button-docking",
+	"html": "button-docking-right.html",
+	"css": "button-docking-right.css",
+	"span": {"xs": 12, "sm": 6, "md": 4, "lg": 4},
+	"styles": [
+		"av-global-layout"
+	]
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Signature Dialog",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "signature"
+  ]
+}

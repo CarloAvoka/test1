@@ -1,0 +1,68 @@
+{
+	"label": "Docking Error Block",
+	"category": "Navigation",
+	"html": "docking-errors.html",
+	"css": "docking-errors.css",
+	"js":	"docking-errors.js",
+	"noData": true,
+	"exMandatory": true,
+	"propDefs" : {
+        "header": {
+          "label": "Header",
+          "type": "richText",
+          "value": "Please resolve the following issues before proceeding",
+          "helpText": "Enter the header text"
+        },
+        "subHeader": {
+          "label": "Sub Header",
+          "type": "richText",
+          "value": "Click on an issue to go directly to the related section of the form.",
+          "helpText": "Enter the sub header text"
+        },
+		"dockedHeader": {
+			"label": "Docked Header",
+			"type": "richText",
+			"value": "{{Form.validation.errors.length}} error(s) found",
+			"category" : "Docked Error Options",
+			"helpText": "Enter the mobile header text"
+		},
+        "dockedSubHeader": {
+          "label": "Docked Sub Header",
+          "type": "richText",
+          "value": "Please touch here to resolve the next error.",
+          "category" : "Docked Error Options",
+          "helpText": "Enter the mobile sub header text"
+        },
+        "mobileA11yMessageBefore": {
+          "label": "Mobile Message Before List",
+          "type": "richText",
+          "value": "The following {{Form.validation.errors.length + (Form.validation.errors.length == 1 && ' issue was' || ' issues were')}} found.",
+          "category" : "Accessibility",
+          "helpText": "This is the message that will be read out to screen readers on before the list of errors are read out"
+        },
+        "mobileA11yMessageAfter": {
+          "label": "Mobile Message After List",
+          "type": "richText",
+          "value": "Please select the screen to go to the first error.",
+          "category" : "Accessibility",
+          "helpText": "This is the message that will be read out to screen readers after the list of errors are read out"
+        }
+	},
+	"rows": [
+		[
+			{
+				"label": "Dock Errors",
+				"type": "data-field",
+				"htmlLabel": "Dock Errors",
+				"id": "dockErrors"
+			},
+			{
+				"label": "Errors Dock Lock",
+				"type": "data-field",
+				"htmlLabel": "Errors Dock Lock",
+				"id": "errorsDockLock"
+			}
+		]		
+	],
+	"style": ["av-block-error"]
+}

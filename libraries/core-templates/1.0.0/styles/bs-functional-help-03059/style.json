@@ -1,0 +1,8 @@
+{
+  "label": "BS Functional Help",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "button"
+  ]
+}

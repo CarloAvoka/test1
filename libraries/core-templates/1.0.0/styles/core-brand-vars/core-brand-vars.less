@@ -1,0 +1,70 @@
+.override-color(@property, @color, @elseColor) {
+  & when (iscolor(@elseColor)) {
+      @{property}:  @elseColor;
+  }
+  & when not (iscolor(@elseColor)) {
+      @{property}: @color;
+  }
+}
+
+@av-primary-color: #ff6405;
+@av-primary-contrast: #ffffff;
+@av-secondary-color: #F2F2F2;
+@av-secondary-contrast: #0C384B;
+@av-touch-button-color: '';
+@av-neutral-color: #F2F2F2;
+@av-neutral-contrast: #8C8C8C;
+@av-font-color: #333;
+@av-font-family: Arial, Helvetica, sans-serif;
+@av-popover-help: #0C384B;
+@av-popover-help-btn-focus: #2a7ab0;
+@av-form-background-color: #FFFFFF;
+@av-form-inner-background-color: #FFFFFF;
+@av-body-background-color: #FFFFFF;
+/* Touch Button */
+@av-touch-button-color: '';
+
+/* Buttons */
+@av-button-font-size: 16px;
+
+@av-max-form-width: 1020px;
+@screen-sm: 400px;
+@screen-md: 560px;
+@screen-lg: 780px;
+
+form {
+  .override-color(color, #333, @av-font-color);
+  .override-color(background-color, #FFFFFF, @av-form-background-color);
+  font-family: @av-font-family;
+  > [data-widget-children] {
+    .override-color(background-color, #FFFFFF, @av-form-inner-background-color);
+  }
+}
+
+body.av-form {
+  .override-color(background-color, #FFFFFF, @av-body-background-color);
+}
+
+form[name="form"] .av-popover-help .av-popover-btn {
+  i {
+    color: @av-popover-help;
+  }
+  &:focus i {
+    color: @av-popover-help-btn-focus;
+  }
+  .popover-tooltip .content {
+    border-color: @av-popover-help;
+  }
+  .popover-tooltip:not(.is-below) .arrow {
+    border-top-color: @av-popover-help;
+  }
+}
+
+.av-dialog[class*="col-"] {
+  max-width: @av-max-form-width;
+
+  @media (max-width: @screen-lg) {
+    top: 5%;
+    bottom: 5%;
+  }
+}

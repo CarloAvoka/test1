@@ -1,0 +1,36 @@
+{
+  "label": "BS Mobile Progress Bar",
+  "block": {
+    "decs": {},
+    "blocks": {
+      "wdg-progress-page-icon": {
+        "decs": {
+          "color": "#7deb81"
+        },
+        "blocks": {}
+      },
+      "wdg-progress-group-icon": {
+        "decs": {
+          "color": "#b63232"
+        },
+        "blocks": {}
+      },
+      "wdg-mobile-progress-bar": {
+        "decs": {
+          "@background": "#7bd5ff, 100"
+        },
+        "blocks": {}
+      },
+      "wdg-mobile-progress-bar-background": {
+        "decs": {
+          "@background": "#cccccc, 35"
+        },
+        "blocks": {}
+      }
+    }
+  },
+  "file": "style.less",
+  "widgets": [
+    "mobile-progress-bar"
+  ]
+}

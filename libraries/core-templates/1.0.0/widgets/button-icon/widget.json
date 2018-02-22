@@ -1,0 +1,10 @@
+{
+	"label": "Icon button",
+	"category": "Buttons",
+	"type": "button",
+	"span": {"xs": 12, "sm": 6, "md": 4, "lg": 4},
+	"styles": [
+		"av-global-layout",
+		"av-button-icon"
+	]
+}

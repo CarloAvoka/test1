@@ -1,0 +1,8 @@
+{
+  "label": "BS Floating Layer",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

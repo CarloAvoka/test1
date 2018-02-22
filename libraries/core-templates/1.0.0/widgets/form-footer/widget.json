@@ -1,0 +1,42 @@
+{
+	"label": "Form Footer",
+    "span" : {"xs": 12, "sm": 12, "md": 12, "lg": 12},
+	"html": "form-footer.html",
+	"rows": [
+	[
+		{
+			"exclude": false,
+			"htmlLabel": "Footer Section",
+			"id": "footerSection",
+			"label": "Footer Section",
+			"path": "",
+			"rows": [
+				[
+					{
+						"label": "Form Footer Text",
+						"htmlLabel": "<p>&copy; Copyright Avoka Technologies {{Calc.date().getFullYear()}} ~ <a href=\"http://www.avoka.com/about-avoka/privacy-policy\" target = '_blank' >Privacy Policy</a></p>",
+						"type": "text-display",
+						"styles": [
+							"form-footer-text"
+						],
+						"pubId": "8c9b02742d3841d8a9c30d826878b6af"
+					}
+				]
+			],
+			
+			"styles": [
+				"mg-section-2"
+			],
+			"type": "section-2"
+			}
+		]
+	],
+	"type": "block",
+	"rules": {
+		"sh": "!Util.isReceipt"
+	},
+	"animateVisibility": false,
+	"noData": true,
+	"icon": "avoka-power.png",
+	"category": "Display Fields"
+}

@@ -1,0 +1,37 @@
+form[name='form'] {
+	.bs-top-navigation-container-95011 {
+		&.cover-header {
+      		position: fixed;
+			left : 150px;
+        	top : 0;
+        	z-index: 10; 
+			animation: scrolldown 0.5s ease-in-out;
+		}
+		&.leave-header {
+			position: relative;
+        	left : unset;
+            top : unset;
+            width : auto ! important;
+			animation: scrollup 0.5s ease-in-out;
+			transform-origin: 0% 0%;
+		}
+		@keyframes scrolldown {
+			from { 
+            		left: 150px;
+            		top: 34px;
+        	}
+			to { 
+            		left: 150px;
+            		top: 0;
+        	}
+		}
+		@keyframes scrollup {  
+        	0% {
+            		transform: rotateX(90deg);
+			}
+			100% {
+					transform: rotateX(0deg);
+        	}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+form[name='form'] {
+	.bs-submit-button-65937 {
+      position : fixed;
+      bottom : 1%;
+      left: 30%;
+      .wdg-button {		// Button
+        outline: none;
+        border: 1px solid @av-primary-color;
+        background: @av-primary-color;          
+        //color: #183842;
+        color: white;
+        transition: all 0.7s ease;
+        padding-top: 8px;
+          &:hover {
+            background: transparent;
+            color: @av-secondary-color;
+            border-color: @av-secondary-color;
+
+          } &:focus, &:active {
+             background: @av-secondary-color;
+             color: #fff; 
+          }
+        
+		}
+
+		.wdg-button-icon {		// Button icon
+		
+		}
+
+		.wdg-button-label {		// Button label
+        font-size: 16px;
+               
+		}
+      
+      /* Custom, iPhone Retina */ 
+      @media only screen and (min-width : 320px) {
+        left: 20%;
+        bottom : 0px;
+      }
+
+      /* Extra Small Devices, Phones */ 
+      @media only screen and (min-width : 480px) {
+        left: 20%;
+        bottom : 0px;
+      }
+
+      /* Small Devices, Tablets */
+      @media only screen and (min-width : 768px) {
+        left: 26%;
+        bottom : 0px;
+      }
+
+      /* Medium Devices, Desktops */
+      @media only screen and (min-width : 1200px) {
+        left: 33%;
+      }
+
+      /* Large Devices, Wide Screens */
+      @media only screen and (min-width : 1300px) {
+        left: 35%;
+      }
+
+	}
+}

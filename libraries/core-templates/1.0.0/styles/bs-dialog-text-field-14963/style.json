@@ -1,0 +1,8 @@
+{
+  "label": "BS Dialog Text Field",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "text-input"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "label": "BS Ben Test Progress Bar",
+  "block": {
+    "decs": {},
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "mobile-progress-bar"
+  ]
+}

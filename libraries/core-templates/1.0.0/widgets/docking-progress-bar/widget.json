@@ -1,0 +1,33 @@
+{
+	"category": "Navigation",
+	"label": "Docking Progress Bar",
+	"icon": "progressBar.png",
+	"html": "dockingProgressBar.html",
+	"css": "docking-progress-bar.css",
+	"js":	"docking-progress-bar.js",
+	"propDefs" : {
+		"progressBarHeight": {
+			"label": "Progress bar height (px)",
+			"type": "integer",
+			"value": 50,
+			"helpText": "Height of the progress bar when it displays undocked below the form header"
+		}
+	},
+	"rows": [
+		[
+			{
+				"span": {
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12
+				},				
+				"label": "Progress Bar",
+				"type": "progress-bar",
+				"htmlLabel": "Progress Bar",
+				"id": "progress_bar"
+			}
+		]		
+	],
+	"styles": ["av-docking-progress-bar-banner"]
+}

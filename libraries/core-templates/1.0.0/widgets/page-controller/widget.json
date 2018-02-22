@@ -1,0 +1,73 @@
+{
+  "category": "Navigation",
+  "label": "Page Controller",
+  "html": "page-controller.html",
+  "icon": "page-controller.png",
+  "js": "page-controller.js",
+  "noData": true,
+  "exMandatory": true,
+  "propDefs": {
+    "saveOnPageChange": {
+      "label": "Background Save On Page Change",
+      "type": "boolean",
+      "value": false,
+      "helpText": "Form will save on page change"
+    },
+    "validationMode": {
+      "label": "Validation Mode",
+      "type": "option",
+      "value": "sequential",
+      "options" : [{"label":"Unconstrained, validate on submit","value":"unconstrained"},{"label":"Sequential, validate on page change","value":"sequential"}],
+      "helpText": "Select the page validation mode"
+    },
+    "focusMode": {
+      "label": "Focus After Page Change Mode",
+      "type": "option",
+      "category": "Accessibility",
+      "value": "smart",
+      "options" : [{"label":"Smart Focus","value":"smart"},{"label":"Do Nothing","value":"none"}],
+      "helpText": "Smart focus sets focus to navigator if present. If not, find first heading."
+    },
+    "transitionDelay": {
+      "label": "Page Transition Delay",
+      "type": "integer",
+      "value": 500,
+      "helpText": "Provide how long the duration of the page transition will be"
+    },
+    "restartAtLastSavedPage": {
+      "label": "Restart At Last Saved Page",
+      "type": "boolean",
+      "value": false,
+      "helpText": "If checked, the form will return to the page it was on after save and resume."
+    },
+    "pageTransition": {
+      "label": "Page Transition",
+      "category": "",
+      "type": "option",
+      "value": "Fade",
+      "helpText": "The transition for page change",
+      "options": [
+        {
+          "label": "Fade",
+          "value": "Fade"
+        },
+        {
+          "label": "Slide",
+          "value": "Slide"
+        }
+      ]
+    }
+  },
+  "rows": [[]],
+  "validChildren": ["nav-group", "nav-page"],
+  "styles": [ "av-nav-content" ],
+  "ruleTemplates": [
+    {
+      "type": "pagechange",
+      "name": "Page change",
+      "editor": "script",
+      "isAction": true,
+      "msg": "a script to run when the user navigates between pages. Use the info parameter to access the id of the page navigated to and from."
+    }
+  ]
+}

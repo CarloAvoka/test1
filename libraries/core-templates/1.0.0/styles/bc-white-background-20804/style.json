@@ -1,0 +1,8 @@
+{
+  "label": "BC White Background",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

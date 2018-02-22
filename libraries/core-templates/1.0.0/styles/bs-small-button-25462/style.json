@@ -1,0 +1,8 @@
+{
+  "label": "BS Small Button",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "button"
+  ]
+}

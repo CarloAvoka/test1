@@ -1,0 +1,40 @@
+<div class="av-menu-errors-block" data-ng-controller="DockingErrorsController" >
+	<div class="av-menu-errors-container animate-height-if"
+		data-ng-if="!avReceipt && !Form.dialogName">
+			 <div class="av-menu-errors hide-xs hide-sm">
+			 	<div class="av-menu-errors-wrapper animate-height-if"
+			 	data-ng-if="!data.dockErrors && Form.validation && Form.validation.errors.length > 0"
+			 	tabindex="0"
+			 	aria-describedby="av-menu-errors-describe-by">
+					<h3 data-av-compile data-ng-bind-html="sanitize(item.properties.header)"></h3>
+					<div class="av-menu-errors-guide" data-av-compile data-ng-bind-html="sanitize(item.properties.subHeader)"></div>
+					<ul>
+			            <li data-ng-repeat="err in Form.validation.errors">
+						<a href="" class="av-menu-error" data-av-compile data-ng-bind-html="sanitize(err.msg)" data-ng-click="Form.gotoError(err)"></a>
+			            </li>
+			        </ul>
+	        	</div>
+	        </div>
+			 <div class="av-menu-errors-docked animate-height-if"
+			 	aria-hidden="true"
+			 	role="button"
+			 	data-ng-if="data.dockErrors && Form.validation && Form.validation.errors.length > 0"
+			 	data-ng-click="Form.goToNextError(); Form.showMobileErrors = false;">
+			 	<div class="av-menu-errors-small-icon" 
+			 	tabindex="-1">!</div>
+				<h3 data-av-compile aria-hidden="true" data-ng-bind-html="sanitize(item.properties.dockedHeader)"></h3>
+				<div data-av-compile aria-hidden="true" data-ng-bind-html="sanitize(item.properties.dockedSubHeader)"></div>
+				<span class="av-hidden" id="av-menu-errors-describe-by">
+					<span data-av-compile data-ng-bind-html="sanitize(item.properties.mobileA11yMessageBefore)"></span>
+					<ul>
+						<li data-ng-repeat="err in Form.validation.errors">
+							<span data-av-compile data-ng-bind-html="sanitize(err.msg)"></span>
+						</li>
+		        	</ul>
+					<span data-av-compile data-ng-bind-html="sanitize(item.properties.mobileA11yMessageAfter)"></span>
+				</span>
+			</div>
+	</div>
+	<div data-widget-children/>
+<div>
+</div>

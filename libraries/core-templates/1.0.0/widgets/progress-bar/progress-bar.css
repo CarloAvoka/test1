@@ -1,0 +1,112 @@
+form[name='form'] .progress-container {
+  padding: 0 !important;
+  z-index: 10;
+  height: 100%;
+}
+form[name='form'] .progress-wrapper-outer {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+form[name='form'] .progress-wrapper {
+  display: table;
+  width: 100%;
+}
+form[name='form'] .wdg-progress-bar-heading {
+  position: absolute;
+}
+form[name='form'] .wdg-progress-bar-heading-docked {
+  width: 36px;
+  position: absolute;
+  right: 100%;
+}
+form[name='form'] .progress-bar-wrapper {
+  display: table-cell;
+  position: relative;
+  height: 8px;
+}
+form[name='form'] .progress-container .wdg-page-group-icon-container {
+  position: relative;
+  margin: 0 auto;
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+form[name='form'] .progress-container .wdg-page-segment-container {
+  position: relative;
+  display: table-cell;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  right: 0;
+  top: 0;
+  vertical-align: middle;
+}
+form[name='form'] .progress-container .wdg-page-segment-container.show-page-icon:before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 2px;
+  top: 1px;
+  right: 0;
+}
+form[name='form'] .progress-container li:last-of-type.wdg-page-segment-container.show-page-icon:before {
+  content: none;
+}
+form[name='form'] .progress-container .wdg-page-segment-container.show-group-icon:before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: 4px;
+  left: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+form[name='form'] .progress-container li:first-of-type.wdg-page-segment-container.show-group-icon:before {
+  left: 7px;
+}
+form[name='form'] .progress-container .wdg-page-group-icon-container .wdg-progress-group-icon {
+  position: relative;
+  z-index: 1;
+  left: -7px;
+  top: -16px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+form[name='form'] .progress-container .wdg-page-group-icon-container .wdg-progress-page-icon {
+  position: relative;
+  z-index: 1;
+  float: right;
+  top: 2px;
+  left: 1px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+form[name='form'] .progress-container .wdg-progress-visited-icon {
+  position: relative;
+  height: 100%;
+}
+form[name='form'] .progress-container .wdg-progress-bar {
+  position: absolute;
+  display: table-cell;
+  left: 0px;
+  height: 8px;
+  border-radius: 5px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+form[name='form'] .progress-container .wdg-progress-bar-background {
+  position: absolute;
+  display: table-cell;
+  width: 100%;
+  left: 0px;
+  height: 8px;
+  border-radius: 5px;
+}
+form[name='form'] .progress-container .progress-subtext-wrapper {
+  display: block;
+  width: 100%;
+}
+form[name='form'] .progress-container .progress-subtext-wrapper span {
+  display: inline-block;
+}

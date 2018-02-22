@@ -1,0 +1,209 @@
+{
+	"label": "Save Challenge",
+	"rows": [
+		[
+			{
+				"rows": [
+					[
+						{
+							"pubId": "5b00e0bbb7da47fcbd5ca16369a6e6af",
+							"rules": {
+								"click": "Form.showDialog();"
+							},
+							"subId": "1056a8426290467db5649e4a3e08ea47",
+							"id": "close_5",
+							"type": "icon-button"
+						}
+					]
+				],
+				"pubId": "04b32c294db74c8aafac241d2f157a65",
+				"subId": "0f48f8fb12ee46c8b5dede2e4658f8a1",
+				"id": "dialogHeader_5",
+				"type": "block"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												{
+													"label": "To resume your form please complete the following details.",
+													"htmlLabel": "To resume your form please complete the following details.",
+													"entityPath": "save_challenge",
+													"exclude": false,
+													"hasCustomId": true,
+													"path": "",
+													"pathContext": "abs",
+													"pubId": "99a462658fab4254b2b4ce80afb34406",
+													"type": "text-display",
+													"id": "save_challenge_message"
+												}
+											],
+											[
+												{
+													"label": "Reference Code",
+													"rows": [
+														[
+															{
+																"label": "Reference Code",
+																"entityPath": "save_challenge_reference",
+																"exclude": false,
+																"hasCustomId": true,
+																"htmlLabel": "Reference Code",
+																"mandatory": true,
+																"path": "Save/Challenge/Reference/Code",
+																"pathContext": "abs",
+																"pubId": "85628c35c7c64f678d83b46721c08e73",
+																"rules": {
+																	"eq": "return Util.getUrlQueryParam(\"referenceNumber\") != \"\" && Util.getUrlQueryParam(\"referenceNumber\") ? Util.getUrlQueryParam(\"referenceNumber\") : Form.saveChallengeRequired === true ? Form.getSystemData(\"TrackingCode\") : value;"
+																},
+																"type": "text-input",
+																"id": "save_challenge_reference_code"
+															}
+														]
+													],
+													"styles": [
+														"mg-section-2"
+													],
+													"entityPath": "save_challenge_reference_code",
+													"exclude": false,
+													"hasCustomId": true,
+													"htmlLabel": "Reference Code",
+													"path": "",
+													"pathContext": "abs",
+													"pubId": "9d91c3f3db0d42ccaa56296cb16ce906",
+													"type": "section-2",
+													"id": "save_challenge_reference_code_section"
+												}
+											],
+											[
+												{
+													"label": "Security Question",
+													"rows": [
+														[]
+													],
+													"styles": [
+														"mg-section-2"
+													],
+													"properties": {
+														"infoText": "Your answer to this question must match the information you previously provided."
+													},
+													"animateVisibility": true,
+													"entityPath": "save_challenge_question",
+													"exclude": false,
+													"hasCustomId": true,
+													"htmlLabel": "Security Question",
+													"path": "",
+													"pathContext": "abs",
+													"pubId": "bf60f3af33fa4fc1b16450de3b351b70",
+													"rules": {
+														"eq": "return item.rows[0].length > 0 ? Form.data[item.rows[0][0].id] : \"\";",
+														"sh": "return item.rows[0].length > 0;"
+													},
+													"type": "section-2",
+													"id": "save_challenge_question_section"
+												}
+											]
+										],
+										"pubId": "ae14d3a46a3e4437b4a86f4ee460da83",
+										"label": "Open Your Saved Form",
+										"entityPath": "open_your_saved",
+										"hasCustomId": true,
+										"htmlLabel": "Open Your Saved Form",
+										"pathContext": "abs",
+										"subId": "eb8bf3360b1f4a3db69b521b51208ccb",
+										"id": "open_your_saved_form",
+										"type": "section-2"
+									}
+								]
+							],
+							"pubId": "c85b168aeca949219fc6b80703db8480",
+							"label": "Save Challenge Content",
+							"entityPath": "dialog_content_save",
+							"exclude": false,
+							"hasCustomId": true,
+							"htmlLabel": "Save Challenge Content",
+							"path": "",
+							"pathContext": "abs",
+							"subId": "c67d616b1ece48abaeab4eec3f70710c",
+							"id": "dialog_content_save_challenge",
+							"type": "dialog-content"
+						}
+					],
+					[
+						{
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												{
+													"rules": {
+														"click": "Form.resumeForm(item.$$parent.properties.validationRef, item.properties.trackingCodeField, item.properties.challengeAnswerField).catch(function() {\nalert(\"Could not open saved form with the details provided\");\n});",
+														"sh": ""
+													},
+													"pubId": "e73c674fafa146b486eb2c6bd8530cb5",
+													"subId": "6471b7e4d063409483e51ff9138ed85e",
+													"exclude": false,
+													"path": "",
+													"id": "open_6",
+													"type": "button",
+													"label": "Open",
+													"htmlLabel": "Open",
+													"hasCustomId": true
+												}
+											]
+										],
+										"pubId": "fd74176fc1154642871b572034d297fb",
+										"path": "",
+										"subId": "5e49ce4ad21c4dbb96b865b096c67eea",
+										"id": "dialogFooterBlock",
+										"type": "block"
+									}
+								]
+							],
+							"pubId": "37791d13d93240f884ed597d039da865",
+							"path": "",
+							"subId": "50ead585f74e4a198aa3f799c7663b9c",
+							"id": "dialogFooter_7",
+							"type": "block"
+						}
+					]
+				],
+				"pubId": "be31e6d5451642c28ed57b817cd621a8",
+				"path": "",
+				"id": "dialogBody_2",
+				"type": "block"
+			}
+		]
+	],
+	"type": "dialog",
+	"category": "Custom Components",
+	"exclude": false,
+	"hasCustomId": true,
+	"htmlLabel": "Save Challenge",
+	"path": "",
+	"id": "savechallenge",
+	"blockInfo": {
+		"blockCode": "save-challenge",
+		"editLink": "https://maestro.avoka.com.au/maestro/secure/design/15532",
+		"publishLibraryId": 16680,
+		"designVersion": "0.1.0"
+	},
+	"description": "",
+	"ruleTemplates": [
+		{
+			"type": "load",
+			"name": "Load",
+			"editor": "script",
+			"isAction": true,
+			"msg": "a script to run when the dialog loads"
+		}
+	]
+}

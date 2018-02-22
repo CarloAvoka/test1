@@ -1,0 +1,8 @@
+{
+  "label": "BS Close Button Top Right",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "button"
+  ]
+}

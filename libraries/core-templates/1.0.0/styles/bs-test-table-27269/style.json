@@ -1,0 +1,8 @@
+{
+  "label": "BS test table",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "form-header"
+  ]
+}

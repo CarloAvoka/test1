@@ -1,0 +1,14 @@
+{
+  "label": "Maguire Cancel Confirm Info Blocks",
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ],
+  "block": {
+    "decs": {
+      "padding-left": "15px",
+      "padding-right": "15px"
+    },
+    "blocks": {}
+  }
+}

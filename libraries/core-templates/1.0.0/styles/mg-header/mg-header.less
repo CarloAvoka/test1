@@ -1,0 +1,61 @@
+@import (reference) "../mg-base/maguire";
+
+form[name='form'] {
+
+	.mg-header {      
+		transition: left 0.4s ease;
+		left: 0;
+      	top:0;
+		background-color:rgba(255, 255, 255, 1);
+		margin-bottom: 0;
+		padding:15px;
+      	//width: 100vw !important;
+
+		.wdg-header-children-container {
+			vertical-align: middle;
+			max-width:@av-max-form-width;
+		}
+
+		.wdg-header-help-button {
+			position: absolute;
+			top: 17px;
+			right: 6px;
+			background: none;
+			border: none;
+			color: @av-secondary-contrast;
+			font-size: 11pt;
+			z-index: 9;
+
+			@media (max-width: 767px) {
+				top: 8px;
+			}
+
+			.wdg-header-help-label {
+				padding-right: 7px;
+				position: relative;
+				top: -3px;
+				@media (max-width: 767px) {
+					color: white;
+				}
+			}
+
+			.wdg-header-help-qmark {
+				display: inline-block;
+				font-size: 25px;
+				background: @av-secondary-contrast;
+				color: @av-secondary-color;
+				border-radius: 14px;
+				width: 28px;
+				height: 28px;
+				line-height: 29px;
+				text-align: center;
+				@media (max-width: 767px) {
+					color: #005280;
+					background: white;
+				}
+			}
+		}
+
+	}
+
+}

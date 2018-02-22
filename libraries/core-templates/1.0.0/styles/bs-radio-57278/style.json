@@ -1,0 +1,11 @@
+{
+  "label": "BS Radio",
+  "block": {
+    "decs": {},
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "radio-button-group"
+  ]
+}

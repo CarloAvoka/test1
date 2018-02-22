@@ -1,0 +1,63 @@
+form[name='form'] {
+	.av-progress-bar {
+	    float: right;
+	
+	    .wdg-progress-bar {		
+	      background-color: @av-primary-color;
+	    }
+	    .wdg-progress-bar-background {
+	      background-color: rgb(204, 204, 204);
+	    }
+	    .wdg-progress-group-icon {		
+	      color: @av-primary-color;
+	      top: -2px;
+	    }
+	    .progress-subtext-wrapper, .wdg-progress-bar-heading-docked {	
+	      color: @av-primary-color;
+	      @media (max-width: @screen-sm) {
+	        font-size: 12px;
+	      }
+	    }
+	    
+	    .wdg-page-segment-container {
+	      &.show-page-icon{
+	      	&:before {
+  			  background: rgb(170, 170, 170);
+	        }
+	        &.page-visited {
+	          &:before {
+  			    background: rgb(204, 204, 204);
+	          }
+	        }
+	      }
+	      &.show-group-icon{
+	      	&:before {
+  			  background: rgb(204, 204, 204);
+	        }
+			&:after {
+  			  border-color: rgb(170, 170, 170);
+	        }
+	        &.page-visited {
+	          &:before {
+  			    background: @av-primary-color;
+	          }
+	          &:after {
+  			    border-color: @av-primary-color;
+	          }
+	        }
+	      }
+       }
+   }
+
+
+   &.slide-Out-To-Right {
+   	.av-progress-bar {
+   	  .show-group-icon {
+		  &:before {
+	  	    transition: background 0s;
+	  		transition-delay: 0.7s;
+	      }
+	    }
+   	}
+  }
+} 

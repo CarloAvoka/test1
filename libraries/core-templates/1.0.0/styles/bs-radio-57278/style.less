@@ -1,0 +1,118 @@
+form[name='form'] {
+  .radio-basic {
+    &.bs-radio-57278 {
+    	vertical-align: top;
+	    .wdg-button-icon {
+          min-width: 24px;
+          min-height: 24px;
+          background: #fff;
+          border-color:#636f71; 
+          &:before {            
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;            
+       	  }
+        }
+        &.has-error {
+          .wdg-button-icon {
+          }
+        }
+        .wdg-input {
+          padding-left: 36px;
+        }
+        /* States */
+      
+      	/* Checked */
+      	input:checked + .wdg-input { 
+         .wdg-button-icon {
+            background: @av-secondary-color;           
+           	border-color: @av-primary-color;
+           	background: -webkit-radial-gradient(circle, @av-primary-color, @av-secondary-color); 
+            background: -o-radial-gradient(circle, @av-primary-color, @av-secondary-color); 
+            background: -moz-radial-gradient(circle, @av-primary-color, @av-secondary-color); 
+            background: radial-gradient(circle, @av-primary-color, @av-secondary-color);
+
+            &:before {
+              /*
+              background: #FFFFFF;
+              width: 12px;
+              height: 12px;
+              */
+            }
+          }
+        }
+     	/* Hover */
+        input:hover + .wdg-input {  
+            .wdg-button-icon {
+            background: @av-primary-color;
+            transition: width 250ms, height 250ms, background-color 250ms;
+
+            &:before {
+              /*
+              background: #FFFFFF;
+              width: 12px;
+              height: 12px;
+              */
+            }
+          }
+          }
+        
+        input:checked:hover + .wdg-input {
+          .wdg-button-icon {
+            background: @av-secondary-color;
+          }
+        }
+      	/* Focus */
+        input:focus + .wdg-input {
+               .wdg-button-icon {
+            border-color: @av-primary-color;
+
+           &:before {
+             /*
+              background: #FFFFFF;
+              width: 12px;
+              height: 12px;
+*/
+            }
+          }
+        }
+        input:checked:focus + .wdg-input {
+          .wdg-button-icon {
+            background: @av-secondary-color;
+            border-color: @av-primary-color;            
+           	background: -webkit-radial-gradient(circle, @av-primary-color, @av-secondary-color); 
+            background: -o-radial-gradient(circle, @av-primary-color, @av-secondary-color); 
+            background: -moz-radial-gradient(circle, @av-primary-color, @av-secondary-color); 
+            background: radial-gradient(circle, @av-primary-color, @av-secondary-color);
+            transition: width 250ms, height 250ms, background-color 250ms;
+
+            &:before {
+              /*
+              background: #FFFFFF;
+              width: 12px;
+              height: 12px;
+              */
+            }
+          }
+        }
+      	/* Active */
+       	input:active + .wdg-input {
+          .wdg-button-icon {
+            background: @av-primary-color;
+          	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+          }
+        }
+      	/* Disabled */
+       	input:disabled + .wdg-input {
+          cursor: not-allowed;
+		  .wdg-button-icon {
+          	/*color: @disabled-radio-color;
+            border-color: @disabled-radio-color;
+            box-shadow: none;
+            background: lighten(@disabled-radio-color, 20%);*/
+          }
+        }
+	}
+ }
+}

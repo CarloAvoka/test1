@@ -1,0 +1,74 @@
+@progress-height: 8px;	//use this to control size of progress bar - properties are automatically calculated
+@av-neutral-color: aliceblue;
+
+form[name='form'] {
+  .progress-container {
+    padding: 0 !important;
+    z-index: 10;
+    .wdg-page-group-icon-container {
+      position: relative;
+      margin:0 auto;
+      display: table;
+      width: 100%;
+      padding: 0;
+    }
+    .wdg-page-segment-container {
+      position: relative;
+      display: table-cell;
+      box-sizing: border-box;
+      right: 0px;
+      top: 16px;
+      vertical-align: middle;
+    }
+    .wdg-page-group-icon-container {
+      .wdg-progress-group-icon {	
+        position: relative;
+        z-index: 1;
+        left: -7px;	
+        top: -16px;        
+        transition: all 0.7s ease-in-out; 		
+      }
+      .wdg-progress-page-icon {	
+        position: relative;
+        z-index: 1;
+        float: right;
+        top: 2px;
+        left: 1px;        
+        transition: all 0.7s ease-in-out;	
+      }
+    }
+    .wdg-progress-visited-icon {
+      position: relative;
+      height: 100%;
+    }
+    .wdg-progress-bar {
+      position: absolute;
+      display: table-cell;
+      left: 0px; 
+      height: @progress-height; 
+      border-radius: 5px;      
+      transition: all 0.7s ease-in-out; 
+    }
+    .wdg-progress-bar-background {
+      position: absolute;
+      display: table-cell;
+      width: 100%;
+      left: 0px; 
+      height: 8px; 
+      border-radius: 5px;
+    }
+    .progress-subtext-wrapper {
+      display: block;
+      width: 100%;
+      padding-top: 10px;
+    }
+    .progress-subtext-wrapper {
+      span {	
+        display: inline-block;
+      }
+    }
+    .wdg-progress-bar-heading, .wdg-progress-bar-heading-docked {
+      color: @av-neutral-color;
+    }
+  }
+}

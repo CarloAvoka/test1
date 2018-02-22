@@ -1,0 +1,129 @@
+@av-primary-color: #0188cc;
+@av-primary-contrast: #0f486a;
+@av-secondary-color: #002A54;
+@av-secondary-contrast: #041a30;
+@av-neutral-color: #EEEEEE;
+@av-neutral-contrast: #333333;
+@av-section-1-header-color: #202B34;
+@av-section-1-title-font-size: 30px;
+@av-section-2-header-color: #202B34;
+@av-section-2-title-font-size: 21px;
+
+
+@screen-sm: 400px;
+@screen-md: 560px;
+@screen-lg: 780px;
+
+
+.darkenMenuGradient(@var){
+  & when not (@var = '') {
+    .darken(@var, 20%);
+  }
+  & when (@var = '') {
+    .darken(@av-primary-color, 20%);
+  }
+}
+
+/* Need to go through and update top nav */
+@av-menu-color: '';
+@av-menu-color-active: '';
+@av-menu-hover-color: '';
+@av-menu-gradient-color: darken(@av-primary-color, 20%);
+@av-menu-font-size: 13px;
+@av-menu-height: 57px;
+
+/* Main Menu */
+@av-menu-text-color: '';
+@av-menu-text-hover-color: '';
+@av-menu-active-text-color: '';
+
+/* Sub Menu */
+@av-sub-menu-text-color: #005280;
+@av-sub-menu-text-hover-color: #005280;
+@av-sub-menu-active-text-color: #005280;
+@av-sub-menu-active-text-hover-color: #005280;
+@av-sub-menu-background-color: #FFFFFF;
+@av-sub-menu-active-background-color: #FFFFFF;
+@av-sub-menu-background-hover-color: #EEEEEE;
+@av-sub-menu-active-background-hover-color: #EEEEEE;
+
+/* Mobile Menu Color */
+@av-slide-menu-color: #005280;
+@av-slide-menu-item-color: '';
+@av-slide-menu-item-hover-color: '';
+@av-slide-menu-item-active-color: '';
+
+@av-slide-menu-item-text-color: '';
+@av-slide-menu-item-text-hover-color: '';
+@av-slide-menu-item-text-active-color: '';
+
+@av-slide-menu-item-pointer-color: #F39900;
+@av-slide-menu-item-pointer-hover-color: #F39900;
+@av-slide-menu-item-pointer-active-color: #F39900;
+
+/* Mobile Menu Extra Item Color */
+@av-slide-menu-extra-item-color: '';
+@av-slide-menu-extra-item-hover-color: '';
+@av-slide-menu-extra-item-active-color: '';
+
+@av-slide-menu-extra-item-text-color: '';
+@av-slide-menu-extra-item-text-hover-color: '';
+@av-slide-menu-extra-item-text-active-color: '';
+
+@av-slide-menu-extra-item-pointer-color: '';
+@av-slide-menu-extra-item-pointer-hover-color: '';
+@av-slide-menu-extra-item-pointer-active-color: '';
+
+/* Touch Button */
+@av-touch-button-color: '';
+
+/* Buttons */
+@av-button-font-size: 16px;
+
+/* Error Color */
+@av-error-color: #a94442;
+
+.override-color(@property, @color, @elseColor) {
+  & when (iscolor(@elseColor)) {
+      @{property}:  @elseColor;
+  }
+  & when not (iscolor(@elseColor)) {
+      @{property}: @color;
+  }
+}
+
+.gradient(@start, @middle, @stop: @middle, @middleAt: 100%) {
+	background: @middle;
+	background: -webkit-linear-gradient(top, @start 0%, @middle @middleAt, @stop 100%);
+	background: -ms-linear-gradient(top, @start 0%, @middle @middleAt, @stop 100%);
+	background: -moz-linear-gradient(top, @start 0%, @middle @middleAt, @stop 100%);
+	background: -o-linear-gradient(top, @start 0%, @middle @middleAt, @stop 100%);
+	background: linear-gradient(top, @start 0%, @middle @middleAt, @stop 100%);
+	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@start,@stop));
+}
+
+.transition(@transition) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-ms-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
+}
+
+.transition-delay(@delay) {
+  -moz-transition-delay: @delay;
+  -webkit-transition-delay: @delay;
+  transition-delay: @delay;
+} 
+
+.box-shadow(@prop) {
+	-webkit-box-shadow: @prop;
+	-moz-box-shadow: @prop;
+	-ms-box-shadow: @prop;
+	-o-box-shadow: @prop;
+	box-shadow: @prop;
+}
+.av-selected {
+	background: #005280;
+	color: white;
+}

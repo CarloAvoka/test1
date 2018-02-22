@@ -1,0 +1,49 @@
+form[name='form'] {
+	.bs-functional-print-16338 {
+	position:absolute;
+       right:45px;
+      bottom:45px;
+      width:30px;
+      height:30px;
+      &.ng-enter, &.ng-leave { 
+        -moz-transition: 0.4s all ease-in-out; 
+        -o-transition: 0.4s all ease-in-out; 
+        -webkit-transition: 0.4s all ease-in-out; 
+        transition: 0.4s all ease-in-out; 
+      }
+      &.ng-enter, &.ng-leave.ng-leave-active { 
+        right:10px;
+        bottom:10px;
+        opacity:0;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);       
+      }
+      &.ng-leave, &.ng-enter.ng-enter-active { 
+       right:45px;
+      bottom:45px;
+        opacity:1;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        
+        
+      }
+		.wdg-button {		// Button
+		
+		}
+
+		.wdg-button-icon {		// Button icon
+		
+		}
+
+		.wdg-button-label {		// Button label
+		
+		}
+
+	}
+}

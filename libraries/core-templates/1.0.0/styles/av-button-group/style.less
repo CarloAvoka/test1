@@ -1,0 +1,74 @@
+form[name='form'] {
+	.av-button-group {
+
+		.wdg-input {		// Input
+          border: 1px solid #636f71;
+          span {
+            overflow: hidden;
+    		text-overflow: ellipsis;
+            position: relative;
+          }
+		}
+
+        .wdg-input-container:last-child {
+          padding-bottom: 0;
+        }
+      
+		.wdg-button-icon {		// Button icon
+		   display: none;
+		}
+      
+        /* States */
+      	/* Checked */
+        input:not(:checked) + .wdg-input { 
+          span:after {
+          	background-color: #C3C3C3;
+            bottom: -4px;
+            content: '';
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            transition: width 250ms;
+            -webkit-transition: width 250ms;
+            width: 0px;
+          }
+          &:hover span:after {
+          	width: calc(100%);
+          }
+        }
+      
+      	input:checked + .wdg-input {
+          .wdg-input {
+            border: 1px solid #636f71;
+          }
+          .override-color(background-color, @av-secondary-contrast, @av-touch-button-color);
+          color: #FFFFFF;
+        }
+     	/* Hover */
+        input:hover + .wdg-input {  
+           
+        }
+      	/* Focus */
+        input:focus + .wdg-input {
+          
+        }
+      	/* Active */
+       	input:active + .wdg-input {
+          
+        }
+      	/* Disabled */
+      	input:disabled + .wdg-input {
+           cursor: not-allowed;
+          span:after {
+             width: 0px !important;
+          }
+        }
+       	input:disabled:checked + .wdg-input {
+           background-color: @disabled-radio-color;
+        }
+
+	}
+}

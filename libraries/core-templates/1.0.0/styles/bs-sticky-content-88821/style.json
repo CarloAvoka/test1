@@ -1,0 +1,8 @@
+{
+  "label": "BS Sticky Content",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

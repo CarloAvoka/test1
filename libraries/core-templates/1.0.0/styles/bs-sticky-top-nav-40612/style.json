@@ -1,0 +1,8 @@
+{
+  "label": "BS Sticky Top Nav",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

@@ -1,0 +1,49 @@
+form[name='form'] {
+	.bs-dialog-text-field-14963 {
+	
+		.wdg-label {		// Label
+		    color: white;
+		}
+         .wdg-input {		// 
+             background: transparent;
+             outline: none;
+             color: white;
+             box-shadow: none;
+             height: 40px;
+             border-radius: 0px;
+             border: 1px solid @av-secondary-color;
+             border-radius:0!important;
+             box-shadow:none;
+               &:focus{
+               box-shadow:none;
+               }
+      }  
+      &:after {
+              content: "";
+              position: absolute;
+              z-index: 50;
+              width: auto;
+              height: 0;
+              left: 0;
+              right: 0;
+              bottom: 16px;
+              margin-left: 0px;
+              margin-right: 10px;
+              border-bottom: 2px solid @av-primary-color;
+              transform: scale(0.5);
+              opacity: 0;
+              transition: transform 0.2s, opacity 0.2s;
+           }          
+        &.av-focus {
+          &:after {
+            display: block;
+            transform: scale(1);
+            opacity: 1;
+          } 
+        }  &.has-error {
+          .wdg-input {
+              border-bottom: 1px solid #ed5752;
+              }
+           }
+	}
+}

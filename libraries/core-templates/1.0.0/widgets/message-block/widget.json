@@ -1,0 +1,56 @@
+{
+	"label": "Message Block",
+	"description": "A message block for displaying information to the user",
+	"category": "User Information",
+	"type": "block",
+	"styles": [
+		"av-message-block"
+	],
+	"rows": [
+		[
+			{
+				"type": "image",
+				"label": "Info Block Image",
+				"id": "info_block_image",
+				"properties": {
+					"src": {
+						"fileName": "info.png"
+					}
+				},
+				"span": {
+					"xs": 0,
+					"sm": 0,
+					"md": 0,
+					"lg": 0
+				}
+			},
+			{
+				"type": "block",
+				"span": {
+					"xs": 12,
+					"sm": 12,
+					"md": 12,
+					"lg": 12
+				},
+				"rows": [
+					[
+						{
+							"label": "Header",
+							"htmlLabel": "<h3>OK, Lets Get Started!</h3>",
+							"id": "message_block_header",
+							"type": "text-display"
+						}
+					],
+					[
+						{
+							"label": "Content",
+							"htmlLabel": "We make it easy to apply online and it won&#39;t take long, so <strong>let&#39;s get going...</strong>",
+							"id": "info_block_content",
+							"type": "text-display"
+						}
+					]
+				]
+			}
+		]
+	]
+}

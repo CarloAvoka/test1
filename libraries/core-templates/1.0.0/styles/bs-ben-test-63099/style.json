@@ -1,0 +1,11 @@
+{
+  "label": "BS Ben Test",
+  "block": {
+    "decs": {},
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

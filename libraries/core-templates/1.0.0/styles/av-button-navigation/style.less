@@ -1,0 +1,30 @@
+form[name='form'] {
+  .av-button-navigation {  	
+    width:80px;
+    height:80px; 
+    .override-color(color, @av-button-docking-font-color, @av-neutral-color);  
+	
+	.wdg-button {		// Button
+      .override-color(background-color, @av-button-docking-color, @av-primary-contrast);
+      border-radius:50%;
+      outline:0;
+
+      &:hover, &:focus{
+      	.override-color(background-color, @av-primary-color, @av-button-docking-contrast);             
+      }
+      
+      &:active{
+        opacity:1;
+      }
+	}
+
+	.wdg-button-icon {		// Button icon
+      font-size:30px;
+	}
+
+	.wdg-button-label {		// Button label
+      padding:0;
+      font-size: 12px;    		
+	}
+  }
+}

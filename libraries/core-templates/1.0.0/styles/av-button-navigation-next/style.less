@@ -1,0 +1,31 @@
+form[name='form'] {
+  .av-button-navigation-next { 
+  	top: 50%;
+  	right: 136px;
+    
+    .wdg-button {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+      }
+    }
+
+    .error {
+      .wdg-button:after {
+        animation: glowing 600ms 1;
+      }
+    }
+  }
+}
+
+@keyframes glowing {
+  0% { background-color: transparent; }
+  10% { background-color:rgba(255, 0, 0, 0.8); }
+  60% { background-color:rgba(255, 0, 0, 0.8); }
+  100% { background-color: transparent; }
+}

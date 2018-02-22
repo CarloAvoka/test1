@@ -1,0 +1,11 @@
+{
+  "label": "BS Form Text Field",
+  "block": {
+    "decs": {},
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "text-input"
+  ]
+}

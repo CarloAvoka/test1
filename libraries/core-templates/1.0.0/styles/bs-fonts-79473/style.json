@@ -1,0 +1,8 @@
+{
+  "label": "BS Fonts",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "form"
+  ]
+}

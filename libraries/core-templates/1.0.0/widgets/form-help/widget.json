@@ -1,0 +1,306 @@
+{
+	"label": "Form Help",
+	"rows": [
+		[
+			{
+				"rows": [
+					[
+						{
+							"rules": {
+								"click": "Form.showDialog();"
+							},
+							"subId": "1056a8426290467db5649e4a3e08ea47",
+							"id": "close_3",
+							"type": "icon-button",
+							"pubId": "9e296fc30de940628ec8b5dbda46ae26"
+						}
+					]
+				],
+				"subId": "0f48f8fb12ee46c8b5dede2e4658f8a1",
+				"id": "dialogHeader_3",
+				"type": "block",
+				"pubId": "5c9d9ff72c1f42e689d9e5be9b70217b"
+			}
+		],
+		[
+			{
+				"rows": [
+					[
+						{
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												{
+													"span": {
+														"md": 6,
+														"lg": 6
+													},
+													"label": "Online Chat Block",
+													"rows": [
+														[
+															{
+																"properties": {},
+																"exclude": false,
+																"path": "",
+																"id": "infoBlockImage_4",
+																"type": "image"
+															},
+															{
+																"rows": [
+																	[
+																		{
+																			"label": "Online chat",
+																			"htmlLabel": "Online chat",
+																			"exclude": false,
+																			"path": "",
+																			"id": "online_chat_header",
+																			"type": "text-display"
+																		}
+																	],
+																	[
+																		{
+																			"label": "Online chat times",
+																			"htmlLabel": "(8am - 10pm, Mon - Fri)",
+																			"exclude": false,
+																			"path": "",
+																			"id": "online_chat_times",
+																			"type": "text-display"
+																		}
+																	],
+																	[
+																		{
+																			"span": {
+																				"md": 4,
+																				"lg": 4
+																			},
+																			"offset": {
+																				"md": 4,
+																				"lg": 4
+																			},
+																			"label": "Start chat",
+																			"exclude": false,
+																			"htmlLabel": "Start chat",
+																			"path": "",
+																			"styles": [
+																				"form-help-start-chat-button",
+																				"bs-dialog-button"
+																			],
+																			"type": "button",
+																			"id": "start_chat"
+																		}
+																	]
+																],
+																"exclude": false,
+																"path": "",
+																"id": "block_6",
+																"type": "block"
+															}
+														]
+													],
+													"type": "advice-block-info",
+													"styles": [
+														"av-message-block",
+														"form-help-option-container"
+													],
+													"entityPath": "need",
+													"exclude": false,
+													"htmlLabel": "Online Chat Block",
+													"path": "Need/OnlineChatBlock",
+													"pathContext": "abs",
+													"id": "need_onlineChatBlock_1"
+
+												},
+												{
+													"span": {
+														"md": 6,
+														"lg": 6
+													},
+													"label": "Call us block",
+													"rows": [
+														[
+															{
+																"properties": {},
+																"exclude": false,
+																"path": "",
+																"subId": "b1318f7593d14e64a914fb7274e32b1b",
+																"id": "infoBlockImage_4",
+																"type": "image",
+																"pubId": "066f9f02c8ed4d3dbe6fbafadb2c168c"
+															},
+															{
+																"rows": [
+																	[
+																		{
+																			"label": "Call us",
+																			"htmlLabel": "Call us",
+																			"exclude": false,
+																			"path": "",
+																			"subId": "e349c33a8a244107942968737f085a50",
+																			"id": "callUs_2",
+																			"type": "text-display",
+																			"pubId": "40b0d27a39634b32aa5aae46f63f2878"
+																		}
+																	],
+																	[
+																		{
+																			"label": "(Anytime, day or night)",
+																			"htmlLabel": "(Anytime, day or night)",
+																			"exclude": false,
+																			"path": "",
+																			"subId": "a0f122e70d81447bae6f63fe3b381734",
+																			"id": "anytimeDayOrNight_2",
+																			"type": "text-display",
+																			"pubId": "f65b0de563ec4eb586ada9d3ef28dacd"
+																		}
+																	],
+																	[
+																		{
+																			"label": "1800",
+																			"properties": {
+																				"linkUrl": "tel:1800"
+																			},
+																			"exclude": false,
+																			"htmlLabel": "1800",
+																			"path": "_1800",
+																			"styles": [
+																				"form-help-hotline"
+																			],
+																			"type": "link",
+																			"id": "_1800_2",
+																			"pubId": "103eaa13e6744ec69b8514f232cb918d"
+																		}
+																	]
+																],
+																"exclude": false,
+																"path": "",
+																"subId": "3d8afb72dfec47f3a61a08907884c96c",
+																"id": "block_6",
+																"type": "block",
+																"pubId": "c7e09a0bd7c54ffb9ac7ffcc8a59a4e7"
+															}
+														]
+													],
+													"type": "advice-block-info",
+													"styles": [
+														"av-message-block",
+														"form-help-option-container"
+													],
+													"entityPath": "need",
+													"exclude": false,
+													"htmlLabel": "Call us block",
+													"path": "",
+													"pathContext": "abs",
+													"id": "need_callUsBlock_1",
+													"pubId": "77e108d25348486b8ea63797c551f722"
+												},
+												{
+													"span": {
+														"md": 12,
+														"lg": 12
+													},
+													"label": "Visit us",
+													"rows": [
+														[]
+													],
+													"styles": [
+														"mg-section-2",
+														"form-help-visit-us"
+													],
+													"properties": {
+														"infoText": "<p>You are always welcome to visit us in branch for a face-to-face appointment.</p><p><a target=\"_blank\" href=\"http://www.avoka.com\">Find your nearest branch</a></p>"
+													},
+													"entityPath": "need",
+													"exclude": false,
+													"htmlLabel": "Visit us",
+													"path": "",
+													"pathContext": "abs",
+													"type": "section-2",
+													"id": "need_visitUs_1",
+													"pubId": "ff69444690424238a908235995c16dd5"
+												}
+											]
+										],
+										"label": "Need Assistance?",
+										"entityPath": "need",
+										"hasCustomId": true,
+										"htmlLabel": "Need Assistance?",
+										"pathContext": "abs",
+										"subId": "eb8bf3360b1f4a3db69b521b51208ccb",
+										"id": "need_assistance",
+										"type": "section-2",
+										"pubId": "1107cf85ef3843dc91c0824f91ecaf68"
+									}
+								]
+							],
+							"label": "Form Help Content",
+							"entityPath": "dialog_content_form",
+							"exclude": false,
+							"hasCustomId": true,
+							"htmlLabel": "Form Help Content",
+							"path": "",
+							"pathContext": "abs",
+							"subId": "c67d616b1ece48abaeab4eec3f70710c",
+							"id": "dialog_content_form_help",
+							"type": "dialog-content",
+							"pubId": "3cd91d5bc47e4583a3a00652f0d3cc10"
+						}
+					],
+					[
+						{
+							"rows": [
+								[
+									{
+										"rows": [
+											[
+												{
+													"rules": {
+														"click": "Form.showDialog(\"\");",
+														"sh": ""
+													},
+													"subId": "6471b7e4d063409483e51ff9138ed85e",
+													"path": "",
+													"id": "okay_1",
+													"type": "button",
+													"pubId": "dc7f4001523f4d2abc3993898559c950"
+												}
+											]
+										],
+										"path": "",
+										"subId": "5e49ce4ad21c4dbb96b865b096c67eea",
+										"id": "dialogFooterBlock_3",
+										"type": "block",
+										"pubId": "4504af28b4034b5b80bd444f5ae4f86e"
+									}
+								]
+							],
+							"exclude": true,
+							"path": "",
+							"subId": "50ead585f74e4a198aa3f799c7663b9c",
+							"id": "dialogFooter_1",
+							"type": "block",
+							"pubId": "a8009a0488e04ef6b4962a2f5d0c5e51"
+						}
+					]
+				],
+				"path": "",
+				"id": "dialogBody_3",
+				"type": "block",
+				"pubId": "113f48f6928a4f5e991def874d02cb4a"
+			}
+		]
+	],
+	"type": "dialog",
+	"exclude": false,
+	"hasCustomId": true,
+	"htmlLabel": "Form Help",
+	"path": "",
+	"id": "formhelp",
+	"category": "Custom Components",
+	"blockInfo": {
+		"editLink": "https://maestro.avoka.com.au/maestro/secure/design/15529",
+		"publishLibraryId": 16680,
+		"blockCode": "form-help"
+	}
+}

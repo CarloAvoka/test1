@@ -1,0 +1,12 @@
+<div class="btn-docking btn-docking-left">
+	<button type="button" class="btn wdg-button">
+		<i class="wdg-button-icon av-icon-button"
+		   data-ng-if="item.properties.icon && item.properties.iconPos == 'left'"
+		   data-ng-class="item.properties.icon"></i>
+		<span data-av-compile class="wdg-button-label"
+			  data-ng-bind-html="item.htmlLabel || item.label"></span>
+		<i class="wdg-button-icon av-icon-button"
+		   data-ng-if="item.properties.icon && item.properties.iconPos == 'right'"
+		   data-ng-class="item.properties.icon"></i>
+	</button>
+</div>

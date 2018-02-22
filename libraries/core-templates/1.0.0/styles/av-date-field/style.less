@@ -1,0 +1,73 @@
+form[name='form'] {
+	.av-date-field {
+	 .form-control {		// Input
+          background: transparent;
+          border: none !important;
+          box-shadow: none !important;
+          outline: none !important;
+          text-align: left;
+        } 
+      
+      
+        .input-group {
+           outline: none;
+           box-shadow: none;
+           height: 40px;
+           border-radius: 0px;
+           border: 1px solid #636f71;
+           border-radius:0!important;
+           background: #fff;
+             &:focus{
+         box-shadow:none;
+          }
+      }
+      &:after {
+              content: "";
+              position: absolute;
+              z-index: 50;
+              width: auto;
+              height: 0;
+              left: 0;
+              right: 0;
+              bottom: 16px;
+              margin-left: 0px;
+              margin-right: 10px;
+              border-bottom: 2px solid;
+              .override-color(border-bottom-color, @av-primary-color, @av-focus-color);
+              transform: scale(0.5);
+              opacity: 0;
+              transition: transform 0.2s, opacity 0.2s;
+           }   
+           &.av-focus {
+          &:after {
+            display: block;
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+         
+      .input-group-addon {
+          background: transparent;
+          border: none;
+          color: #636f71 !important;
+      }
+  
+	
+		.wdg-label {		// Label
+		
+		}
+
+		.wdg-icon {		// Icon
+		
+		}
+
+		.wdg-input {		// Input
+		
+		}  &.has-error {
+           .input-group {
+              border-bottom: 1px solid #ed5752;
+           }
+         }
+
+	}
+}

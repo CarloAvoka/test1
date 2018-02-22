@@ -1,0 +1,8 @@
+{
+  "label": "BS Full Screen Layer",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

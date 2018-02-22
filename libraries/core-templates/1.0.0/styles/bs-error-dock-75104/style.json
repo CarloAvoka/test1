@@ -1,0 +1,22 @@
+{
+  "label": "BS Error Dock",
+  "block": {
+    "decs": {
+      "@background": "#f41010, 100",
+      "color": "#fef8f8",
+      "min-height": "35px",
+      "max-height": "35px",
+      "min-width": "80px",
+      "max-width": "80px",
+      "border-top-left-radius": "40px",
+      "border-top-right-radius": "40px",
+      "border-bottom-right-radius": "40px",
+      "border-bottom-left-radius": "40px"
+    },
+    "blocks": {}
+  },
+  "file": "style.less",
+  "widgets": [
+    "block"
+  ]
+}

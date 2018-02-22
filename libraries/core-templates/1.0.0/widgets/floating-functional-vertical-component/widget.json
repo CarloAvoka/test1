@@ -1,0 +1,162 @@
+{
+	"category": "Custom Components",
+	"label": "Functional Menu - Vertical Menu",
+	"rows": [
+		[
+			{
+				"label": "",
+				"styles": [
+					"bs-functional-button-bottom-18795",
+					"av-button-navigation"
+				],
+				"properties": {
+					"icon": "fa fa-close",
+					"offIcon": "fa fa-navicon"
+				},
+				"type": "button-toggle-icon",
+				"rules": {
+					"eq": "if (data.onlyOneVisible === \"function-items-1\") {\n    return true;\n}\nreturn value;",
+					"sh": "return data.onlyOneVisible !== \"function-items-1\";"
+				},
+				"subId": "6d8349dcfefa43e0b629a07c41b249ce",
+				"path": "Buttontoggleicon1",
+				"htmlLabel": "",
+				"animateVisibility": false,
+				"pubId": "7e309b8700df47a0b238a21765743756",
+				"id": "buttontoggleicon1"
+			}
+		],
+		[
+			{
+				"label": "Share",
+				"styles": [
+					"av-button-navigation",
+					"bs-functional-buttons-items-vertical-04402"
+				],
+				"properties": {
+					"icon": "fa fa-share-alt"
+				},
+				"rules": {
+					"sh": "data.buttontoggleicon1"
+				},
+				"animateVisibility": "",
+				"subId": "618724928da14126a1ea9dda71f4b9b6",
+				"type": "button",
+				"path": "",
+				"htmlLabel": "Share",
+				"hideLabel": true,
+				"pubId": "ace39756e8c5408482c0b8b277a1b182",
+				"id": "share1"
+			},
+			{
+				"label": "Save and Resume",
+				"styles": [
+					"av-button-navigation",
+					"bs-functional-buttons-items-vertical-04402"
+				],
+				"properties": {
+					"icon": "fa fa-reply"
+				},
+				"rules": {
+					"sh": "data.buttontoggleicon1"
+				},
+				"animateVisibility": "",
+				"subId": "80892dfc989d43dd9cfa852107d2d1b4",
+				"type": "button",
+				"path": "",
+				"htmlLabel": "Save and Resume",
+				"hideLabel": true,
+				"pubId": "cb68117d487640d28aaaf003c8fc12fd",
+				"id": "saveAndResume1"
+			},
+			{
+				"label": "Help",
+				"styles": [
+					"av-button-navigation",
+					"bs-functional-buttons-items-vertical-04402"
+				],
+				"properties": {
+					"icon": "fa fa-question"
+				},
+				"rules": {
+					"sh": "data.buttontoggleicon1"
+				},
+				"animateVisibility": "",
+				"subId": "97601a07e3304ceab704b6152d1174b9",
+				"type": "button",
+				"path": "",
+				"htmlLabel": "Help",
+				"hideLabel": true,
+				"pubId": "f59dd016208347599046c6035ca3f5a3",
+				"id": "help1"
+			},
+			{
+				"label": "Close",
+				"styles": [
+					"av-button-navigation",
+					"bs-functional-buttons-items-vertical-04402"
+				],
+				"properties": {
+					"icon": "fa fa-close"
+				},
+				"rules": {
+					"sh": "data.buttontoggleicon1"
+				},
+				"animateVisibility": "",
+				"subId": "97601a07e3304ceab704b6152d1174b9",
+				"type": "button",
+				"path": "",
+				"htmlLabel": "Close",
+				"hideLabel": true,
+				"pubId": "b331d0eb8b684322a9b90929a6abdbd7",
+				"id": "close1"
+			}
+		],
+		[
+			{
+				"label": "Only one visible",
+				"rules": {
+					"eq": "var buttonCount = Util.children(item.$$parent).length - 2;\nreturn {\n  1: \"function-items-1\",\n  2: \"function-items-2\",\n  3: \"function-items-3\",\n  4: \"function-items-4\"\n\n}[buttonCount]"
+				},
+				"type": "data-field",
+				"path": "",
+				"htmlLabel": "Only one visible",
+				"pubId": "84f37dfc9fdd4fbe9f077401ffc51872",
+				"id": "onlyOneVisible"
+			}
+		],
+		[
+			{
+				"rows": [
+					[]
+				],
+				"type": "block",
+				"path": "",
+				"styles": [
+					"bc-white-background-20804",
+					"bs-floating-layer-60091",
+					"bs-fade-transition-50987"
+				],
+				"pubId": "385d68793aa747538652099218ca1dd8",
+				"id": "block"
+			}
+		]
+	],
+	"type": "block",
+	"path": "",
+	"htmlLabel": "Functional Menu - Vertical Menu",
+	"styles": [
+		"bs-fixed-bottom-right-46166",
+		"bs-fixed-position-21768"
+	],
+	"rules": {
+		"dc": "/*ar buttonCount = Util.children(item).length - 1;\nreturn {\n  1: \"function-items-1\",\n  2: \"function-items-2\",\n  3: \"function-items-3\",\n  4: \"function-items-4\"\n\n}[buttonCount]*/\n\ndata.onlyOneVisible"
+	},
+	"blockInfo": {
+		"editLink": "https://tm.maestro.avoka.com/maestro/secure/design/5532",
+		"publishLibraryId": 5704,
+		"blockCode": "floating-functional-vertical-component"
+	},
+	"description": "",
+	"id": "functionalMenuVertical"
+}

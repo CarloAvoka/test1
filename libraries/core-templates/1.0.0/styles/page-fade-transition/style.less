@@ -1,0 +1,47 @@
+@transition: transform 1s, visibility 1s ease-in-out;
+
+form[name='form'] {
+
+  overflow-x: hidden;
+  .page-fade-transition {
+    .av-menu-page {
+      min-height: 100vh;
+    }
+
+    &[data-view-stack], &[view-stack], [data-view-stack], [view-stack] {
+
+      .vstk-up {
+        -webkit-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        transform: translateX(200%);
+      }
+      .vstk-down {
+        -webkit-transform: translateX(-200%);
+        -ms-transform: translateX(-200%);
+        transform: translateX(-200%);
+      }
+
+      &.stack-active, section {
+        overflow-y: hidden;
+      }
+
+      .vstk-in, .vstk-out {
+        -webkit-transition: @transition;
+        -moz-transition: @transition;
+        -ms-transition: @transition;
+        -o-transition: @transition;
+        transition: @transition;
+      }
+
+      .vstk-in.ng-enter {
+        transform: none;
+      }  
+    }
+    &.slide-Out-To-Left {
+      .vstk-out.ng-enter { transform: translateX(200%); }
+    }
+    &.slide-Out-To-Right {
+      .vstk-out.ng-enter { transform: translateX(-200%); }
+    }
+  }
+}

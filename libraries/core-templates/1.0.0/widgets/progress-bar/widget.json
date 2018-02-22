@@ -1,0 +1,30 @@
+{
+	"category": "Navigation",
+	"label": "Progress Bar",
+	"icon": "progressBar.png",
+	"html": "progressBar.html",
+	"css": "progress-bar.css",
+	"js":	"progress-bar.js",
+	"propDefs": {		
+		"displayPageName": {
+			"label": "Display page name",
+			"type": "boolean",
+			"value": true,
+			"category" : "Display Options"
+		},		
+		"displayPageIcon": {
+			"label": "Display page icon",
+			"type": "boolean",
+			"value": true,
+			"category" : "Display Options"
+		},
+		"displayGroupIcon": {
+			"label": "Display group icon",
+			"type": "boolean",
+			"value": true,
+			"category" : "Display Options"
+		}
+	},
+	"styles": ["av-progress-bar"],
+	"styleTargets": ["wdg-progress-group-icon", "wdg-progress-page-icon", "wdg-progress-bar-background"]
+}

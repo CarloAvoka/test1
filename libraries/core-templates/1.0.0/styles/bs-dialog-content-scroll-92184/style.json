@@ -1,0 +1,8 @@
+{
+  "label": "BS dialog content scroll",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "section-2"
+  ]
+}

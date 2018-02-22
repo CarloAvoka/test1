@@ -1,0 +1,44 @@
+{
+  "label": "Radio Basic",
+  "block": {
+    "decs": {},
+    "blocks": {
+      "wdg-input": {
+        "decs": {
+          "padding-left": "29px",
+          "min-height": "20px"
+        },
+        "blocks": {}
+      },
+      "wdg-input-container": {
+        "decs": {
+          "padding-right": "5px",
+          "padding-bottom": "10px"
+        },
+        "blocks": {}
+      },
+      "wdg-button-icon": {
+        "decs": {
+          "font-size": "14px",
+          "border-style": "solid",
+          "border-top-width": "1px",
+          "border-right-width": "1px",
+          "border-left-width": "1px",
+          "border-bottom-width": "1px",
+          "min-width": "20px",
+          "min-height": "20px",
+          "border-top-left-radius": "32px",
+          "border-top-right-radius": "32px",
+          "border-bottom-right-radius": "32px",
+          "border-bottom-left-radius": "32px",
+          "max-height": "20px",
+          "max-width": "20px",
+          "text-align": "center",
+          "border-color": "#8c8c8c"
+        },
+        "blocks": {}
+      }
+    }
+  },
+  "file": "style.less"
+}

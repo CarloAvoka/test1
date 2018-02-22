@@ -1,0 +1,8 @@
+{
+  "label": "BS Functional Button Items",
+  "block": {},
+  "file": "style.less",
+  "widgets": [
+    "button"
+  ]
+}

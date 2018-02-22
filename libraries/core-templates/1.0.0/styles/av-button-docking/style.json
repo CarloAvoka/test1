@@ -1,0 +1,8 @@
+{
+	"block": {},
+	"file": "style.less",
+	"label": "AV docking button",
+	"widgets": [
+		"button"
+	]
+}

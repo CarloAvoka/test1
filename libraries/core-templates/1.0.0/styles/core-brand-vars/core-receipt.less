@@ -1,0 +1,190 @@
+@screen-sm: 400px;
+@screen-md: 560px;
+@screen-lg: 780px;
+
+form[name="form"].av-receipt {
+  max-width: 800px;
+  font-family: Nimbus Sans L Regular, Nimbus Sans L, Verdana, sans-serif !important;
+  font-size: 8pt;
+  background: #FFFFFF;
+
+  > [data-widget-children] {
+    background-color: #FFFFFF;
+  }
+
+  .av-repeat-delete,
+  .av-repeat-button {
+    display: none;
+  }
+
+  .av-section-1,
+  .av-menu,
+  .av-nav-content,
+  .av-nav-group {
+    float: none !important;
+    display: block !important;
+  }
+
+  .error-block {
+    display: none;
+  }
+
+
+  /* Field styles */
+  .av-global-layout {
+    padding-bottom: 10px !important;
+  }
+
+  textarea {
+    overflow: hidden;
+  }
+
+  .form-control {
+    height: 31px;
+  }
+
+  .text-area-receipt {
+    height: 100%;
+    word-wrap: break-word;
+  }
+
+  // Input group styling
+  .input-group {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    .input-group-addon {
+      border-left: 0;
+      border-top: 0;
+      border-bottom: 0;
+      border-right: 1px #ccc solid;
+    }
+    .form-control {
+      border: none;
+      height: 29px;
+      min-height: 29px;
+    }
+  }
+
+  // Radio button linux vertical alignment fix
+  .av-radio i {
+    &:before {
+      -webkit-transform: translate(-50%, -46%);
+      -ms-transform: translate(-50%, -46%);
+      transform: translate(-50%, -46%);
+    }
+  }
+
+  // Hide Dropdown icon
+  .av-select-overlay .av-select-icon {
+    display: none !important;
+  }
+
+  .av-popover-btn {
+    display: none !important;
+  }
+
+  // Prevent first page from breaking
+  .av-nav-content .force-page-break {
+    page-break-before: always;
+    &.stop-page-break,
+    &:first-child {
+      page-break-before: auto;
+    }
+  }
+
+  // Receipt layout
+
+  // remove any unwanted pseudos
+  .clearfix, .container, .container-fluid {
+    &:after, &:before {
+      content: none !important;
+    }
+  }
+
+  main .row {
+    display: table !important;
+    table-layout: fixed;
+    width: 100%;
+
+    &:before {
+      content: none !important;
+    }
+    // fix for tables that only have one element
+    &:after {
+      content: " " !important;
+      display: block !important;
+    }
+
+    > .av-item-container {
+      display: table-cell !important; // set to table cells so page-break-avoid can work
+      float: none !important;
+      zoom: 1;
+    }
+
+    > .av-global-layout {
+      page-break-inside: avoid;
+    }
+    // redeclare these bootstrap classes so they work after being overrode
+
+    // redo offsets as margin-left will not work, use left
+    .col-lg-offset-12 {
+      left: 100%;
+    }
+    .col-lg-offset-11 {
+      left: 91.66666667%;
+    }
+    .col-lg-offset-10 {
+      left: 83.33333333%;
+    }
+    .col-lg-offset-9 {
+      left: 75%;
+    }
+    .col-lg-offset-8 {
+      left: 66.66666667%;
+    }
+    .col-lg-offset-7 {
+      left: 58.33333333%;
+    }
+    .col-lg-offset-6 {
+      left: 50%;
+    }
+    .col-lg-offset-5 {
+      left: 41.66666667%;
+    }
+    .col-lg-offset-4 {
+      left: 33.33333333%;
+    }
+    .col-lg-offset-3 {
+      left: 25%;
+    }
+    .col-lg-offset-2 {
+      left: 16.66666667%;
+    }
+    .col-lg-offset-1 {
+      left: 8.33333333%;
+    }
+
+    .hide-xs {
+      @media (max-width: @screen-sm) {
+        display: none !important;
+      }
+    }
+    .hide-sm {
+      @media (min-width: @screen-sm) and (max-width: @screen-md) {
+        display: none !important;
+      }
+    }
+    .hide-md {
+      @media (min-width: @screen-md) and (max-width: @screen-lg) {
+        display: none !important;
+      }
+    }
+    .hide-lg {
+      @media (min-width: @screen-lg) {
+        display: none !important;
+      }
+    }
+
+  }
+
+}

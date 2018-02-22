@@ -1,0 +1,33 @@
+form[name='form'] {
+.av-popover-help {
+    margin-left: 10px;
+    position: absolute;
+
+    .av-popover-btn {
+        height: 24px !important;
+        width: 24px !important;
+        bottom: 1px;
+  		i {
+          font-size: 15px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          color: @av-secondary-color;
+        }
+        &:hover, &:focus {       
+          i {
+            color: @av-primary-color;
+          }
+        }
+    }
+    .popover-tooltip {
+      .content {
+        border: none;
+        border-radius: initial;
+      }
+      .arrow {
+        display: none;
+      }
+    }
+  }
+}

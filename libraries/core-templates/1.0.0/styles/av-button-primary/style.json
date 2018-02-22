@@ -1,0 +1,7 @@
+{
+  "label": "AV primary button",
+  "file": "style.less",
+  "widgets": [
+    "av-button"
+  ]
+}

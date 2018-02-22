@@ -1,0 +1,19 @@
+form[name='form'] .av-menu-errors-block {
+  z-index: 10;
+}
+form[name='form'] .av-menu-errors-block .av-menu-errors-container {
+  position: absolute;
+  width: 100%;
+}
+form[name='form'] .av-menu-errors-block .av-menu-errors-container .av-menu-errors,
+form[name='form'] .av-menu-errors-block .av-menu-errors-container .av-menu-errors-docked {
+   max-width:1280px;
+   float:none;
+   margin:0 auto;
+}
+form[name='form'] .av-menu-errors-block .av-menu-errors-container:focus {
+  outline: none;
+}
+form[name='form'] .av-menu-errors-block .av-menu-errors-container .av-menu-errors-docked {
+  cursor: pointer;
+}
